@@ -8,11 +8,10 @@ header {
 p {
     text-align: justify;
     margin: auto;
-    width: 50%;
+    width: 90%;
     min-width: 200px;
     max-width: 600px;
     text-indent: 1em;
-    
 }
 
 /*cabeçalho parte superior*/
