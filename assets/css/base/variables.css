@@ -1,0 +1,12 @@
+:root {
+    --primary: #0284c7;        /* Azul oceano */
+    --secondary: #06b6d4;      /* Ciano */
+    --accent: #10b981;        /* Verde esmeralda */
+    --background: #f0f9ff;   /* Azul muito claro */
+    --background-night: #1c2129; 
+    --surface: #ffffff;        /* Branco */
+    --text-primary: #0f172a;  /* Azul muito escuro */
+    --text-secondary: #475569; /* Azul-cinza */
+    --color-border:  #5f708a;
+    --cor-destaque: #390FFA;
+}

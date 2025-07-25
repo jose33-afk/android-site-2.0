@@ -1,0 +1,93 @@
+header {
+    background-color: var(--accent);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.377);
+    color: var(--surface);
+    width: 100%;
+}
+
+/*cabeçalho parte superior*/
+.top {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: 60px;
+}
+
+.verde {
+    background-color: #0b7a5586; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.171);
+    height: 60px;
+    flex: 0 1 210px;
+}
+
+.inicio {
+    display: flex;
+    flex: 8;
+    align-items: center;
+}
+
+.inicio__logo {
+    height: 55px;
+    flex: 0 0 33px;
+}
+
+
+.inicio__titolo {
+    font-size: 1.2em;
+    margin-left: 33px;
+} 
+
+
+/*botao liga desliga modo escuro*/
+.inicio__switch {
+    margin-right: 15px;
+}
+
+.switch__checkbox{ /*tirando o checkbox original, o span vai no lugar*/
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.inicio__switch {
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 50px;
+}
+
+.switch__bolinha {
+    border-radius: 20px;
+    background-color: #758bac; /*cor desligado*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+    position: absolute;
+    transition: .3s ease-in-out;
+    bottom: 0;
+    top: 0; /*pra ocupar todo o header__switch*/
+    left: 0; 
+    right: 0; 
+}
+
+.switch__bolinha::before {
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.219);
+    content: ""; /*é obrigatorio quando uso before e after*/
+    position: absolute;
+    height: 94%;
+    width: 45%;
+    top: 1px;
+    transition: .3s ease-in-out;
+}
+
+input:checked + .switch__bolinha::before{ /*Quando o input estiver marcado*/
+    background-color: var(--accent);
+    transform: translateX(26px);
+}
+
+input:checked + .switch__bolinha{
+    background-color: white;
+}
+

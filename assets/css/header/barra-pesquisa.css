@@ -1,0 +1,36 @@
+#pesquisa__input {
+    all: unset; 
+    background-color: var(--surface);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+    color: var(--text-primary);
+    flex: 0 1;
+    text-align: center;
+    height: 35px;
+}
+
+.pesquisa {
+    position: relative;
+    margin: 5px 15px 5px 0;
+}
+
+.pesquisa__linha {
+    background-color: var(--color-border);
+    top: 24px;
+    left: 19px;
+    opacity: 0;
+    position: absolute;
+    height: 2px;
+    width: 160px;
+}
+
+@keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#pesquisa__input:focus + .pesquisa__linha{
+    animation: piscar 1.2s ease-in-out infinite;
+   
+}

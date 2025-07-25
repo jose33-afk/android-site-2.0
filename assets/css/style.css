@@ -1,0 +1,9 @@
+@import url(./base/variables.css);
+@import url(./base/normalize.css);
+@import url(./base/reset.css);
+
+@import url(./header/header.css);
+@import url(./dark-mode/dark-mode.css);
+@import url(../css/body/body.css);
+@import url(./header/barra-pesquisa.css);
+@import url(./header/parte-inferior.css);

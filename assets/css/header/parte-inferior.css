@@ -1,0 +1,43 @@
+/*cabeçalho parte inferior*/
+.botoes {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.fixo {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/*botoes*/
+.botoes__grid-botao {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.botoes__botao {
+    all: unset;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    font-size: 1.1em;
+    flex: 0 1 40px;
+    margin: 10px;
+}
+
+.botoes__botao:hover {
+    color: var(--text-secondary);
+    border-color: var(--color-border);
+}
+
+.botoes__botao.inicio {
+    margin-left: 40px;
+}
+
+p {
+    width: 500px;
+}
