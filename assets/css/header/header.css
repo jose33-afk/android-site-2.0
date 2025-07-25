@@ -22,6 +22,7 @@ p {
     flex-flow: row nowrap;
     justify-content: flex-start;
     height: 60px;
+    width: 100%;
 }
 
 .verde {
