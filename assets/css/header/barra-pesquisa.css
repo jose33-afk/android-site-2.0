@@ -32,5 +32,15 @@
 
 #pesquisa__input:focus + .pesquisa__linha{
     animation: piscar 1.2s ease-in-out infinite;
-   
+}
+
+@media (max-width: 767px) {
+  #pesquisa__input {
+    width: 120px;
+    font-size: 14px;
+}
+
+.pesquisa__linha {
+    width: 90px;
+}
 }

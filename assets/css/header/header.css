@@ -101,3 +101,21 @@ input:checked + .switch__bolinha{
     background-color: white;
 }
 
+
+@media (max-width: 767px) {
+    .top {
+        position: relative;
+    }
+
+    .inicio__titolo {
+        margin: 0;
+        font-size: 14px;
+    } 
+
+    .verde {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

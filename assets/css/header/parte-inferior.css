@@ -12,6 +12,7 @@
     position: fixed;
     top: 0;
     z-index: 1000;
+    animation: baixo-suave .3s ease-out forwards; /*2*/
 }
 
 /*botoes*/
@@ -37,3 +38,14 @@
 .botoes__botao.inicio {
     margin-left: 40px;
 }
+
+@keyframes baixo-suave{ /*1*/
+    from { transform: translateY(-100%);}
+    to {transform: translateY(0);}
+}
+
+/* 
+    1 - faz um transiçao de cima pra baixo, é pra poder usar como animaçao
+    2 - o forwards é pra ele ficar no top 0, pra nao voltar pra cima quando acabar a 
+        animaçao ".5s"
+*/
