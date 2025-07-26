@@ -26,18 +26,29 @@ window.addEventListener('scroll', function() { //1
 })
 
 //Mover Titolo quando a tela for pequena.
-window.addEventListener('resize', function () {
+const larguraFixed = window.innerWidth;
+
+if (larguraFixed <= 767) { //Largura de tela fixa.
+    mudarElement(divVerde, titolo)
+}
+ 
+function mudarElement (elementPai, elementFilho) {
+    elementPai.appendChild(elementFilho)
+}
+
+window.addEventListener('resize', function () { //Largura de tela responsiva.
     let larguraTela = window.innerWidth;
     const divVerde = document.querySelector('.verde')
     const titolo = document.querySelector('.inicio__titolo')
     const divInicio = document.querySelector('.inicio')
 
     if (larguraTela <= 767) {
-        divVerde.appendChild(titolo)
+        mudarElement(divVerde, titolo)
     } else {
         divInicio.appendChild(titolo)
     }
 })
+
 
 
 //Criar uma funçao pra crior elementos, usar para o menu
