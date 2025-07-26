@@ -50,10 +50,6 @@ p {
 
 
 /*botao liga desliga modo escuro*/
-.inicio__switch {
-    margin-right: 15px;
-}
-
 .switch__checkbox{ /*tirando o checkbox original, o span vai no lugar*/
     opacity: 0;
     height: 0;
@@ -61,8 +57,9 @@ p {
 }
 
 .inicio__switch {
-    position: relative;
     display: inline-block;
+    position: relative;
+    margin-right: 15px;
     height: 25px;
     width: 50px;
 }
@@ -118,4 +115,22 @@ input:checked + .switch__bolinha{
         align-items: center;
     }
 
+    .inicio__switch {
+        height: 20px;
+        width: 35px;
+    }
+
+    .switch__bolinha::before {
+        height: 90%;
+        width: 50%;
+    
+    }
+
+    input:checked + .switch__bolinha::before{ /*Quando o input estiver marcado*/
+        transform: translateX(16px);
+    }
+
+    .inicio__switch {
+        margin-right: 5px;
+    }
 }

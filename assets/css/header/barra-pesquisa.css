@@ -35,12 +35,16 @@
 }
 
 @media (max-width: 767px) {
-  #pesquisa__input {
-    width: 120px;
-    font-size: 14px;
-}
+    #pesquisa__input {
+        width: 120px;
+        font-size: 14px;
+    }
 
-.pesquisa__linha {
-    width: 90px;
-}
+    .pesquisa__linha {
+        width: 90px;
+    }
+
+    .pesquisa {
+        margin-right:5px;
+    }
 }
