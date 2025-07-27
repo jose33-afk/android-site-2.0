@@ -1,9 +1,9 @@
 function pegaElemento (nomeElement, umOumais=1) {
     if (umOumais > 1) {
         return document. querySelectorAll(nomeElement);
-    } else {
+    } else{
          return document.querySelector(nomeElement);
-    }
+    }   
 }
 
 function substituirClass (elementAnt, elementNov) {

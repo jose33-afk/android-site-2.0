@@ -58,13 +58,22 @@
 }
 
 @media (max-width: 767px) {
+    
     #pesquisa__input {
-        width:120px;
+        width: 0;
         font-size: 14px;
     }
 
-    .pesquisa__linha {
-        width: 90px;
+    #pesquisa__input.tamanho {
+        width: 160px;
+    }
+
+    .pesquisa__linha{
+        width: 0;
+    }
+
+    .pesquisa__linha.tamanho{
+        width: 120px;
     }
 
     .pesquisa {
