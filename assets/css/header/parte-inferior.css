@@ -44,6 +44,18 @@
     to {transform: translateY(0);}
 }
 
+
+@media (max-width: 767px) {
+    .botoes__grid-botao--desaparece{
+       display: none;
+    }
+
+    .botoes--desaparece{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /* 
     1 - faz um transiçao de cima pra baixo, é pra poder usar como animaçao
     2 - o forwards é pra ele ficar no top 0, pra nao voltar pra cima quando acabar a 

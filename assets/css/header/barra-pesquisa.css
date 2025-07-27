@@ -14,6 +14,24 @@
     margin: 5px 15px 5px 0;
 }
 
+.pesquisa__botao {
+    all: unset;
+    padding: 2px;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    left: auto;
+    height: 28px;
+    width: 28px;
+}
+
+.pesquisa__botao--img {
+    background-image: url(/assets/img/icons/Search.png); /*Usar barra pra n dar probelma*/
+    background-size: cover;
+    background-position: center center;
+    height: 95%;
+}
+
 .pesquisa__linha {
     background-color: var(--color-border);
     top: 24px;
@@ -34,9 +52,14 @@
     animation: piscar 1.2s ease-in-out infinite;
 }
 
+#pesquisa__input:focus ~ .pesquisa__botao{ /*~ o elemento tem que estar no msm pai*/
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
 @media (max-width: 767px) {
     #pesquisa__input {
-        width: 120px;
+        width:120px;
         font-size: 14px;
     }
 
@@ -47,4 +70,10 @@
     .pesquisa {
         margin-right:5px;
     }
+    
+    .pesquisa__botao {
+        border-radius: 10px;
+        background-color: var(--surface);
+    }
+
 }
