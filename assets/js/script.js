@@ -12,11 +12,12 @@ let posicaoAtual; //2
 window.addEventListener('scroll', function() { //1
     const posicaoScroll = window.scrollY;
     const menu = document.querySelector('.botoes')
-    const pesquisa = this.document.querySelector('#pesquisa__input')
+    const pesquisa = this.document.querySelector('.pesquisa')
 
     if (posicaoAtual > posicaoScroll && posicaoScroll !=0){
         menu.classList.add('fixo')
         pesquisa.style.display = 'none'
+
     } else {
         menu.classList.remove('fixo')
         pesquisa.style.display = 'block'
@@ -26,7 +27,7 @@ window.addEventListener('scroll', function() { //1
 })
 
 //Mover Titolo quando a tela for pequena.
-const larguraFixed = window.innerWidth;
+let larguraFixed = window.innerWidth;
 const divVerde = document.querySelector('.verde')
 const titolo = document.querySelector('.inicio__titolo')
 
@@ -79,32 +80,42 @@ function substituirClass (elementAnt, elementNov) {
     }
 }
 
-if (larguraFixed <= 767) {
-    //lupa muda de lugar.
-    const botaoPesquisa = document.querySelector('.pesquisa__botao');
-    let primeiroClick = true;
 
-    botaoPesquisa.addEventListener('click', () => {
-        const pesquisaImg = pegaElemento('.pesquisa__botao--img')
-    
+const botaoPesquisa = document.querySelector('.pesquisa__botao');
+const pesquisaImg = pegaElemento('.pesquisa__botao--img')
+let primeiroClick = true;
+
+let = larguraDaTela = window.innerWidth;
+
+function retirar() {
+    substituirClass('.botoes__grid-botao--desaparece', 'botoes__grid-botao');
+    substituirClass('.botoes--desaparece', 'botoes');
+
+    pesquisaImg.style.backgroundImage = 'url(/assets/img/icons/Search.png)'
+    primeiroClick = true;
+}
+
+botaoPesquisa.addEventListener('click', () => {
+    console.log(`clicou largura ${larguraDaTela}`)
+    if (larguraDaTela < 767) {
         if (primeiroClick) {
-            substituirClass('.botoes__grid-botao', 'botoes__grid-botao--desaparece')
-
-            pegaElemento('.botoes').classList.replace('botoes', 'botoes--desaparece')
-
+            substituirClass('.botoes__grid-botao', 'botoes__grid-botao--desaparece');
+            substituirClass('.botoes', 'botoes--desaparece');
+            
             pesquisaImg.style.backgroundImage = 'url(/assets/img/icons/angulo-circulo-direita.png)'
             primeiroClick = false;
-
         } else {
-            pegaElemento('.botoes__grid-botao--desaparece').classList.replace('botoes__grid-botao--desaparece', 'botoes__grid-botao')
-            
-            pegaElemento('.botoes--desaparece').classList.replace('botoes--desaparece', 'botoes')
-       
-            pesquisaImg.style.backgroundImage = 'url(/assets/img/icons/Search.png)'
-            primeiroClick = true;
+            retirar()
         }
-    })
-}      
+    }
+})
+
+window.addEventListener('resize', function () {
+    larguraDaTela = window.innerWidth;
+    if (larguraDaTela > 767) {
+    retirar()
+}
+});
 
 //Criar uma funçao pra crior elementos, usar para o menu
 //Depois criar pastas pra por as funcoes
