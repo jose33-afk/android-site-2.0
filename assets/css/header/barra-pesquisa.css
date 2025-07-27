@@ -26,7 +26,7 @@
 }
 
 .pesquisa__botao--img {
-    background-image: url(/assets/img/icons/Search.png); /*Usar barra pra n dar probelma*/
+    background-image: url(../../img/icons/Search.png); /*Usar barra pra n dar probelma*/
     background-size: cover;
     background-position: center center;
     height: 95%;

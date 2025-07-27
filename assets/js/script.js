@@ -91,7 +91,7 @@ function retirar() {
     substituirClass('.botoes__grid-botao--desaparece', 'botoes__grid-botao');
     substituirClass('.botoes--desaparece', 'botoes');
 
-    pesquisaImg.style.backgroundImage = 'url(/assets/img/icons/Search.png)'
+    pesquisaImg.style.backgroundImage = 'url(./assets/img/icons/Search.png)'
     primeiroClick = true;
 }
 
@@ -102,7 +102,7 @@ botaoPesquisa.addEventListener('click', () => {
             substituirClass('.botoes__grid-botao', 'botoes__grid-botao--desaparece');
             substituirClass('.botoes', 'botoes--desaparece');
             
-            pesquisaImg.style.backgroundImage = 'url(/assets/img/icons/angulo-circulo-direita.png)'
+            pesquisaImg.style.backgroundImage = 'url(./assets/img/icons/angulo-circulo-direita.png)'
             primeiroClick = false;
         } else {
             retirar()
