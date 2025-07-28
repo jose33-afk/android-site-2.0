@@ -2,11 +2,13 @@ import { iniciarMenuFixo } from './modules/menuFixed.js';
 import { MoveTitolo } from './modules/titoloMover.js';
 import { pegaElemento, substituirClass } from './modules/utils.js';
 import { ModoDark } from './modules/botaoDark.js';
+import { pesquisa } from './modules/pesquisa.js';
 
 document.addEventListener('DOMContentLoaded', () =>{ //Iniciar Funçoes.
     iniciarMenuFixo();  //Menu fixado no topo quando rolar para cima.
     MoveTitolo(); //Mover Titolo quando a tela for pequena.
     ModoDark();
+    pesquisa();
 });
 
 //Mudar Barra de pesquisa.
@@ -29,7 +31,6 @@ function retirar() {
 }
 
 botaoPesquisa.addEventListener('click', () => {
-    console.log(`clicou largura ${larguraDaTela}`)
     if (larguraDaTela < 767) {
         if (primeiroClick) {
             substituirClass('.botoes__grid-botao', 'botoes__grid-botao--desaparece');
@@ -44,7 +45,6 @@ botaoPesquisa.addEventListener('click', () => {
         }
     }
 })
-
 
 window.addEventListener('resize', function () {
     larguraDaTela = window.innerWidth;

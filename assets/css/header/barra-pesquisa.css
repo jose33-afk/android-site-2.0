@@ -7,6 +7,7 @@
     flex: 0 1;
     text-align: center;
     height: 35px;
+    width: 225px;
 }
 
 .pesquisa {
@@ -39,7 +40,7 @@
     opacity: 0;
     position: absolute;
     height: 2px;
-    width: 160px;
+    width: 183px;
 }
 
 @keyframes piscar {
