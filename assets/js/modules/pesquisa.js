@@ -46,17 +46,21 @@ const nomesPesquisar = [
 
 function cacarElement (inputPesquisa) {
     let nomeDoIdDoElemento;
-    let primeira = 0;
-    console.log(inputPesquisa)
-
+    
     nomesPesquisar.forEach(nome => {
         const nomeDoOjeto = Object.keys(nome);
-        
+    
         if (nomeDoOjeto == inputPesquisa) {
             nomeDoIdDoElemento = nome[nomeDoOjeto] // 1
-            rolar(nomeDoIdDoElemento)
+            return;
         }
     })
+
+    if (nomeDoIdDoElemento == undefined) {
+        alert('Não encontrado ou não existe.')
+    } else {
+        rolar(nomeDoIdDoElemento)
+    }
 }
 
 
