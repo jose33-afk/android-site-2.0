@@ -53,3 +53,11 @@ window.addEventListener('resize', function () {
     }
 });
 
+//botão INICIO 
+const botaoInicio = pegaElemento('.botoes__botao.inicio')
+botaoInicio.addEventListener('click', () => {
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    })
+})
