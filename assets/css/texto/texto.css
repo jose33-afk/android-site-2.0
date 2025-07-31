@@ -15,6 +15,7 @@ h3 {
 }
 
 p {
+    text-align: justify;
     min-width: 200px;
     max-width: 700px;
     margin: 1em auto;
@@ -30,4 +31,13 @@ ul {
 
 main strong {
     color: #135c43;
+}
+
+@media (max-width: 767px) {
+    main {
+       width: 350px;
+    }
+    main  h1 {
+        font-size: 18px;
+    }
 }
