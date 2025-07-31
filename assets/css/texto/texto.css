@@ -35,7 +35,8 @@ main strong {
 
 @media (max-width: 767px) {
     main {
-       width: 350px;
+       width: 340px;
+       padding: 5px;
     }
     main  h1 {
         font-size: 18px;
