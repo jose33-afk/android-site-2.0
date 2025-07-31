@@ -1,44 +1,79 @@
 import { pegaElemento } from "./utils.js";
+import { formatarInput } from "./formatarinput.js"
 
-const nomesPesquisar = [ 
-    {"AndyRubin":"andy-rubin-pai-do-android"},
-    {"RichMiner":"rich-miner-cofundador"}
-]
-
-/*
-let inputPesquisa = "RichMiner";//teste, deixar tudo mais usculas e sem espaços
-
-let nomeDoIdDoElemento;
-
-nomesPesquisar.forEach(nome => {
-    const nomeDoOjeto = Object.keys(nome);
+const nomesPesquisar = [
+    // Pessoas com IDs específicos
+    {"andyrubin": "andy-rubin-pai-do-android"},
+    {"richminer": "rich-miner-cofundador"},
+    {"nicksears": "nick-sears-cofundador"},
+    {"chriswhite": "chris-white-cofundador"},
+    {"larrypage": "larry-page-cofundador-google"},
+    {"sergeybrin": "sergey-brin-cofundador-google"},
+    {"sundarpichai": "sundar-pichai-ceo-google"},
     
-    if (nomeDoOjeto == inputPesquisa) {
-        nomeDoIdDoElemento = nome[nomeDoOjeto] // 1
-    }
-    rolar(nomeDoIdDoElemento)
-})
-*/
+    // Seções principais (com IDs de cabeçalho)
+    {"introducao": "introducao"},
+    {"origensefundacao": "origens-e-fundacao-2003-2005"},
+    {"desenvolvimento": "desenvolvimento-e-primeira-versao-2007-2008"},
+    {"primeirasevolucoes": "primeiras-evolucoes-2009-2010"},
+    {"consolidacao": "consolidacao-e-crescimento-2010-2013"},
+    {"materialdesign": "era-material-design-2014-2016"},
+    {"maturidade": "maturidade-e-inteligencia-2016-2019"},
+    {"androidmoderno": "android-moderno-2019-2024"},
+    {"androidbrasil": "android-no-brasil"},
+    {"ecossistema": "ecossistema-e-tecnologias"},
+    {"cronologia": "cronologia-detalhada-e-marcos"},
+    {"recursos": "recursos-complementares-e-interatividade"},
+    
+    // Dispositivos históricos (com IDs específicos)
+    {"htcdream": "htc-dream-t-mobile-g1-2008-primeiro-android"},
+    {"tmobileg1": "htc-dream-t-mobile-g1-2008-primeiro-android"},
+    {"motoroladroid": "motorola-droid-2009"},
+    {"samsunggalaxys": "samsung-galaxy-s-2010"},
+    {"galaxynexus": "galaxy-nexus-2011"},
+    {"nexus7": "nexus-7-2012"},
+    {"motox": "moto-x-2013"},
+    {"nexus5": "nexus-5-2013"},
+    {"galaxynote7": "galaxy-note-7-2016"},
+    {"pixel": "pixel-2016"},
+    {"galaxys8": "galaxy-s8-2017"},
+    {"pixel3": "pixel-3-2018"},
+    {"galaxyfold": "galaxy-fold-2019"},
+    {"pixel6": "pixel-6-2021"},
+    {"motorolamilestone": "motorola-milestone-primeiro-no-brasil"}
+]; //Aprender .json
 
 
-function rolar(IdElement) { //FOIIIIIIIIIIIIIIIIII
-   // const element = document.querySelector(`#${IdElement}`)
-   const element = document.querySelector('#recursos-complementares-e-interatividade')
-    const posicaoDoElement = element.offsetTop;
-    console.log(posicaoDoElement)
+function cacarElement (inputPesquisa) {
+    let nomeDoIdDoElemento;
+    let primeira = 0;
+    console.log(inputPesquisa)
 
-   setTimeout(() => {
-        window.scrollTo({
-            top:posicaoDoElement,
-            behavior: 'smooth'
-        })
-    }, 1000)
+    nomesPesquisar.forEach(nome => {
+        const nomeDoOjeto = Object.keys(nome);
+        
+        if (nomeDoOjeto == inputPesquisa) {
+            nomeDoIdDoElemento = nome[nomeDoOjeto] // 1
+            rolar(nomeDoIdDoElemento)
+        }
+    })
 }
 
 
-rolar()
 
+function rolar(IdElement) { 
+    const element = document.querySelector(`#${IdElement}`)
 
+    const posicaoDoElement = element.offsetTop;
+    console.log(posicaoDoElement)
+
+    setTimeout(() => {
+            window.scrollTo({
+                top:posicaoDoElement,
+                behavior: 'smooth'
+            })
+    }, 1000)
+}
 
 
 function pesquisa () {
@@ -46,9 +81,8 @@ function pesquisa () {
 
     input.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            
             if (input.value.length != 0) {
-                console.log('Tem valor')
+                cacarElement(formatarInput(input.value))
             } else {
                 alert('Você precisa digitar para pesquisar...')
             }
@@ -56,8 +90,9 @@ function pesquisa () {
     })
 }
 
-export { pesquisa };
 
+
+export { pesquisa };
 /*
     1 - é porque eu so tenho um elemento dentro e ele é o AndyRubin ou outro.
 */
