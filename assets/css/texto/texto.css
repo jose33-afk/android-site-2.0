@@ -1,8 +1,10 @@
 .section-contener {
     box-shadow:-6px 0 6px -4px rgba(0, 0, 0, 0.2), 6px 0 6px -4px rgba(0, 0, 0, 0.2);  
     min-width: 340px;
-    max-width: 65%;
+    max-width: 55%;
+    margin: 0 auto;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.199);
+    
 } 
 
 .section-contener__texto-completo h1 {
@@ -65,4 +67,11 @@
 
 .section-introducao__linha {
     width: 95%;
+}
+
+
+@media (max-width: 767px) {
+    .section-contener {
+        min-width: 100%;
+    }
 }

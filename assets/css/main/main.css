@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-columns: 2fr 5.5fr;
+    grid-template-columns: 1;
     line-height: 2em;
     /*min-width: 200px; por nos textos etc
     max-width: 700px;*/
