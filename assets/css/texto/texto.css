@@ -1,9 +1,39 @@
-.main__texto-completo section {
+.section-contener {
+    box-shadow:-6px 0 6px -4px rgba(0, 0, 0, 0.2), 6px 0 6px -4px rgba(0, 0, 0, 0.2);  
     min-width: 340px;
-    max-width: 70%;
+    max-width: 65%;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.199);
+} 
+
+.section-contener__texto-completo {
+    width: 95%;
+    margin: 2em auto;
 }
 
-
+/*Introduçao*/
 #texto-completo__section-introducao {
-    background-image: linear-gradient(to bottom, var(--accent), var(--secondary));
+    border-radius: 10px;
+    background: var(--background-introducao);
+    color: white;
+    padding: 10px;
+}
+
+#texto-completo__section-introducao strong {
+    color: var(--cor-strong);
+}
+
+.section-introducao__titolo {
+    color: var(--cor-titolo);
+    text-align: center;
+}
+
+.section-introducao__linha {
+    border-bottom: 3px solid var(--cor-titolo);
+    margin: 1em auto;
+    height: 2px;
+    width: 95%;
+}
+
+.section-introducao__subtitolo {
+    color: var(--cor-subtitolo);
 }
