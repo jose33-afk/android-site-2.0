@@ -34,6 +34,16 @@
     color: var(--cor-subtitolo);
 }
 
+.caixa-destaque {
+    background-color:  var(--cor-caixa-destaque);
+    border-radius: 5px;
+}
+
+.caixa-destaque p{
+    
+    padding: 15px;
+}
+
 .linha {
     border-bottom: 3px solid var(--cor-titolo);
     margin: 1em auto;

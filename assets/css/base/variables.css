@@ -1,15 +1,16 @@
 :root {
-    --cor-strong: #0284c7;        /* Azul oceano */
-    --secondary: #06b6d4;      /* Ciano */
-    --accent: #10b981;        /* Verde esmeralda */
+    --cor-strong:#26abee;   
+    --secondary: #06b6d4;      
+    --accent: #10b981;        
     --cor-titolo: #25f7b1; 
-    --background: #f0f9ff;   /* Azul muito claro */
+    --background: #f0f9ff;   
     --background-night: #1c2129; 
-    --surface: #ffffff;        /* Branco */
-    --text-primary: #0f172a;  /* Azul muito escuro */
-    --text-secondary: #475569; /* Azul-cinza */
+    --surface: #ffffff;       
+    --text-primary: #0f172a;  
+    --text-secondary: #475569; 
     --color-border:  #5f708a;
 
-    --cor-subtitolo: #26abee;
+    --cor-subtitolo:  #0284c7;
     --background-introducao: linear-gradient(to right, #10b9818f, #06b5d4b4);
+    --cor-caixa-destaque: #0285c71f;
 }
