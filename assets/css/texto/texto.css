@@ -1,8 +1,7 @@
 .section-contener {
     box-shadow:-6px 0 6px -4px rgba(0, 0, 0, 0.2), 6px 0 6px -4px rgba(0, 0, 0, 0.2);  
     min-width: 340px;
-    max-width: 55%;
-    margin: 0 auto;
+    max-width: 70%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.199);
     
 } 
@@ -34,6 +33,10 @@
 
 .section-contener__texto-completo h2, h3 {
     color: var(--cor-subtitolo);
+}
+
+.section-contener__texto-completo ul {
+   margin-left: 19px;
 }
 
 .caixa-destaque {

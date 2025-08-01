@@ -1,4 +1,22 @@
 .main__menu {
+    background-color: grey;
+    overflow-y: auto;
     opacity: 0;
-    width: 0;
+    height: 100vh;
+    max-height: 888px;
+    border: 2px solid rgb(255, 20, 20);
+    
 }
+
+.main__menu.ativo {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+
+}
+
+/*
+ no mobile vai ocupar 100% nao vai ficar no lado
+ e vai ter um fundo transparente
+*/

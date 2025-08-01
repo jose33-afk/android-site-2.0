@@ -98,7 +98,7 @@ input:checked + .switch__bolinha{
 
     .inicio__titolo {
         margin: 0;
-        font-size: 14px;
+        font-size: 1em;
     } 
 
     .verde {
