@@ -1,8 +1,8 @@
 function pegaElemento (nomeElement, umOumais=1) {
     if (umOumais > 1) {
-        return document. querySelectorAll(nomeElement);
+        return Array.from(document.querySelectorAll(nomeElement));//1
     } else{
-         return document.querySelector(nomeElement);
+         return document.querySelector(nomeElement); 
     }   
 }
 
@@ -27,3 +27,8 @@ function substituirClass (elementAnt, elementNov) {
 }
 
 export { pegaElemento, substituirClass };
+
+/*
+    1 - ele retorna uma nodeList que é mais fraca, nao é uma array de verdade 
+
+*/

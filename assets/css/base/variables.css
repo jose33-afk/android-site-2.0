@@ -12,5 +12,6 @@
 
     --cor-subtitolo:  #0284c7;
     --background-introducao: linear-gradient(to right, #10b9818f, #06b5d4b4);
+    --background-menu-lateral: linear-gradient(to bottom, #10b9818f, #06b5d4b4);
     --cor-caixa-destaque: #0285c71f;
 }

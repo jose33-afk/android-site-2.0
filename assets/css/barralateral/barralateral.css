@@ -1,5 +1,5 @@
 .main__menu {
-    background-color: rgba(0, 0, 0, 0.548);
+    background: var(--background-menu-lateral);
     color: white;
     overflow-y: auto;
     opacity: 0;
@@ -8,12 +8,17 @@
 
 .main__menu.ativo {
     opacity: 1;
-    width: 95%;
+    width: 100%;
 }
 
-@media (max-width: 767px) {
+.menu__lista--item {
+  margin: 5px 10px;
+  font-size: 1.3em;
+}
+
+@media (max-width: 911px) {
     .main__menu {
-      
+        background-color: black;
         position: absolute;
     }
 
@@ -21,11 +26,9 @@
         opacity: 1;
         width: 80%;
     }
+
+    .menu__lista--item {
+        line-height: 1.4em;
+        font-size: 1em;
+    }
 }
-
-/*
- no mobile vai ocupar 100% nao vai ficar no lado
- e vai ter um fundo transparente, vai ter que usar position com flex.
-
- -- por tambem um negocio pra remover quando começar a descer.
-*/

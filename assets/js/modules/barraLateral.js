@@ -13,7 +13,7 @@ botaoNavegar.addEventListener('click', mostrarBarraLateral);
 function mostrarBarraLateral () {
    let AlturaDaTelaFixa = window.innerHeight;
    menu.classList.toggle('ativo')
-   menu.style.height = (AlturaDaTelaFixa - 107) + "px"; //Altura responsiva.
+   menu.style.height = (AlturaDaTelaFixa - 105) + "px"; //Altura responsiva.
 }
 
 //Insere os titolos na lista do menu lateral.
@@ -23,11 +23,17 @@ function inserirLista(ElementInserir) {
    nomesPesquisar.forEach(objeto => {
       const nomeDoOjeto = Object.keys(objeto);
       let nomeDoIdFormatado = objeto[nomeDoOjeto].replaceAll('-', ' ')
+      nomeDoIdFormatado = PrimeriaLetraMausc(nomeDoIdFormatado)
 
       ElementInserir.innerHTML += `
          <li class="menu__lista--item">${nomeDoIdFormatado}</li>
       `
    })
+}
+
+//Primeira letra maiuscula.
+function PrimeriaLetraMausc (string) {
+   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 //Remover barra lateral quando rolar pra baixo.
@@ -40,6 +46,15 @@ window.addEventListener('scroll', () => {
       menu.classList.remove('ativo')
    }
 })
+
+//function pesquisaPorTitolo () {
+   const listaDelinhas = pegaElemento('.menu__lista--item', 2)
+   listaDelinhas.shift()
+   console.log(listaDelinhas[0]);  /*tava fazendo a funcao pra pegar os nomes 
+   colocar os hifes de volta e chamar o pesquisa.*/
+
+//}
+
 
 export { mostrarBarraLateral };
 
