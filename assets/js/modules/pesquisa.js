@@ -44,6 +44,7 @@ export const nomesPesquisar = [
 ]; //Aprender .json
 
 
+
 function cacarElement (inputPesquisa) {
     let nomeDoIdDoElemento;
     
@@ -96,7 +97,7 @@ function pesquisa () {
 
 
 
-export { pesquisa };
+export { pesquisa, cacarElement };
 /*
     1 - é porque eu so tenho um elemento dentro e ele é o AndyRubin ou outro.
 */

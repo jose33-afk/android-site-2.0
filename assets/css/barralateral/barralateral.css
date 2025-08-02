@@ -1,10 +1,9 @@
 .main__menu {
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
     overflow-y: auto;
     opacity: 0;
-    height: 89.1vh;
     width: 0;
-    border: 2px solid rgb(255, 20, 20);
 }
 
 .main__menu.ativo {
@@ -14,9 +13,7 @@
 
 @media (max-width: 767px) {
     .main__menu {
-        background-color: rgba(0, 0, 0, 0.548);
-        height: 87.4vh;
-        border: 2px solid rgb(110, 20, 255);
+      
         position: absolute;
     }
 
