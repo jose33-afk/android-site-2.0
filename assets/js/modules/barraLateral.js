@@ -8,7 +8,7 @@ const menu = document.querySelector('.main__menu')
 botaoNavegar.addEventListener('click', mostrarBarraLateral);
 
 function mostrarBarraLateral () {
-   const menuLista = pegaElemento('.menu__lista--item')
+   const menuLista = pegaElemento('.menu__lista')
    let AlturaDaTelaFixa = window.innerHeight;
 
    menu.classList.toggle('ativo')
@@ -19,11 +19,13 @@ function mostrarBarraLateral () {
 
 //Para inserir os titolos de pesquisa na lista do menu lateral.
 function inserirLista(ElementInserir) {
+   ElementInserir.innerHTML = `<li class="menu__lista--item">Titolos</li>` //3
+
    nomesPesquisar.forEach(objeto => {
       const nomeDoOjeto = Object.keys(objeto);
       let nomeDoIdFormatado = objeto[nomeDoOjeto].replaceAll('-', ' ')
 
-      console.log(nomeDoIdFormatado)
+
       ElementInserir.innerHTML += `
          <li class="menu__lista--item">${nomeDoIdFormatado}</li>
       `
@@ -49,4 +51,5 @@ export { mostrarBarraLateral };
        innerHeight - pega a altura da viwePort, tamanho visivel sem pegar a altura completa do site
 
    2 - Atualiza so que nao consigo ver no console log fora do evento
+   3 - zera a lista pra não exibir repitidos
 */
