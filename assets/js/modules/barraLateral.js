@@ -6,6 +6,7 @@ const menu = document.querySelector('.main__menu')
 
 //Mostrar e remover quando clicar no botao.
 botaoNavegar.addEventListener('click', mostrarBarraLateral);
+const primeiroClick = true;
 
 function mostrarBarraLateral () {
    const menuLista = pegaElemento('.menu__lista')
@@ -14,12 +15,12 @@ function mostrarBarraLateral () {
    menu.classList.toggle('ativo')
    menu.style.height = (AlturaDaTelaFixa - 107) + "px"; //Altura responsiva.
    
-   inserirLista(menuLista)
+   primeiroClick ? inserirLista(menuLista) : false    
 }
 
 //Para inserir os titolos de pesquisa na lista do menu lateral.
 function inserirLista(ElementInserir) {
-   ElementInserir.innerHTML = `<li class="menu__lista--item">Titolos</li>` //3
+   ElementInserir.innerHTML = `<li class="menu__lista--item">Titolos</li>` //Titolo 3
 
    nomesPesquisar.forEach(objeto => {
       const nomeDoOjeto = Object.keys(objeto);
