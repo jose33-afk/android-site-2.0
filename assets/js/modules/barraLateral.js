@@ -2,30 +2,27 @@ import { pegaElemento } from "./utils.js"
 import  { nomesPesquisar } from "./pesquisa.js"
 import { cacarElement } from "./pesquisa.js";
 const botaoNavegar = pegaElemento('.botoes__botao.navegar');
-const menu = document.querySelector('.main__menu')
+const menu = pegaElemento('.main__menu')
+
+//Carrega a lista de titolos
+inserirLista(pegaElemento('.menu__lista'))  //mobile tava bugado 
 
 //Mostrar e remover quando clicar no botao.
 botaoNavegar.addEventListener('click', mostrarBarraLateral);
-const primeiroClick = true;
 
 function mostrarBarraLateral () {
-   const menuLista = pegaElemento('.menu__lista')
    let AlturaDaTelaFixa = window.innerHeight;
-
    menu.classList.toggle('ativo')
    menu.style.height = (AlturaDaTelaFixa - 107) + "px"; //Altura responsiva.
-   
-   primeiroClick ? inserirLista(menuLista) : false    
 }
 
-//Para inserir os titolos de pesquisa na lista do menu lateral.
+//Insere os titolos na lista do menu lateral.
 function inserirLista(ElementInserir) {
    ElementInserir.innerHTML = `<li class="menu__lista--item">Titolos</li>` //Titolo 3
 
    nomesPesquisar.forEach(objeto => {
       const nomeDoOjeto = Object.keys(objeto);
       let nomeDoIdFormatado = objeto[nomeDoOjeto].replaceAll('-', ' ')
-
 
       ElementInserir.innerHTML += `
          <li class="menu__lista--item">${nomeDoIdFormatado}</li>
