@@ -14,9 +14,7 @@ function mostrarBarraLateral () {
    menu.classList.toggle('ativo')
 
    menu.style.height = (window.innerHeight - 107) + "px"; //Altura responsiva
-   if (window.innerWidth <= 767) {
-      menu.style.height = (window.innerHeight - 110) + "px"; //1
-   }
+ 
 
    inserirLista(menuLista)
 }
