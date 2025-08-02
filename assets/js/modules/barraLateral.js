@@ -21,18 +21,18 @@ function inserirLista(ElementInserir) {
    ElementInserir.innerHTML = `<li class="menu__lista--item">Titolos</li>` //Titolo 3
 
    nomesPesquisar.forEach(objeto => {
-      const nomeDoOjeto = Object.keys(objeto);
-      let nomeDoIdFormatado = objeto[nomeDoOjeto].replaceAll('-', ' ')
-      nomeDoIdFormatado = PrimeriaLetraMausc(nomeDoIdFormatado)
-
+      let nomeDoOjeto = Object.keys(objeto);
+      nomeDoOjeto = PrimeriaLetraMausc(`${nomeDoOjeto[0]}`)
+      
       ElementInserir.innerHTML += `
-         <li class="menu__lista--item">${nomeDoIdFormatado}</li>
+         <li class="menu__lista--item">${nomeDoOjeto}</li>
       `
    })
 }
 
 //Primeira letra maiuscula.
 function PrimeriaLetraMausc (string) {
+   console.log(string)
    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
