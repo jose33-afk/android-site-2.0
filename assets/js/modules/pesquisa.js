@@ -1,7 +1,7 @@
 import { pegaElemento } from "./utils.js";
 import { formatarInput } from "./formatarinput.js"
 
-const nomesPesquisar = [
+export const nomesPesquisar = [
     // Pessoas com IDs específicos
     {"andyrubin": "andy-rubin-pai-do-android"},
     {"richminer": "rich-miner-cofundador"},

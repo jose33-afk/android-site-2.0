@@ -2,21 +2,33 @@
     background-color: grey;
     overflow-y: auto;
     opacity: 0;
-    height: 100vh;
-    max-height: 888px;
+    height: 89.1vh;
+    width: 0;
     border: 2px solid rgb(255, 20, 20);
-    
 }
 
 .main__menu.ativo {
     opacity: 1;
+    width: 95%;
 }
 
 @media (max-width: 767px) {
+    .main__menu {
+        background-color: rgba(0, 0, 0, 0.548);
+        height: 87.4vh;
+        border: 2px solid rgb(110, 20, 255);
+        position: absolute;
+    }
 
+    .main__menu.ativo {
+        opacity: 1;
+        width: 80%;
+    }
 }
 
 /*
  no mobile vai ocupar 100% nao vai ficar no lado
- e vai ter um fundo transparente
+ e vai ter um fundo transparente, vai ter que usar position com flex.
+
+ -- por tambem um negocio pra remover quando começar a descer.
 */
