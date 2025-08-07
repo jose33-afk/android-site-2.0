@@ -85,3 +85,10 @@ footer h2::after {
         margin-right: 15em;
     }
 }
+
+@media (max-width: 455px) {
+    .interativo {
+        margin-right: 5px;
+        justify-self: start;
+    }
+}
