@@ -19,7 +19,8 @@
 @media (max-width: 911px) {
     .main__menu {
         background-color: black;
-        position: absolute;
+        grid-area: 2 / 1 / 2 / 2;
+        position: relative;
     }
 
     .main__menu.ativo {

@@ -7,6 +7,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
     width: 100%;
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 footer ul {
@@ -64,8 +65,16 @@ footer h2::after {
 
 @media (max-width: 767px) {
     footer {
-        grid-template-columns: none;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
     }
-    
+
+    .grossario {
+        margin-right: 60px; /*Pra ficar do tamanho do curiosidades*/
+    }
+
+    .interativo {
+        margin-right: 10em;
+    }
 }
