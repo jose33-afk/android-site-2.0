@@ -70,6 +70,9 @@ footer h2::after {
         justify-items: center;
     }
 
+    .curiosidades {
+        margin-left: 0;
+    }
     .grossario {
         margin-right: 60px; /*Pra ficar do tamanho do curiosidades*/
     }
