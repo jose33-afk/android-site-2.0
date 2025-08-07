@@ -66,18 +66,22 @@ footer h2::after {
 @media (max-width: 767px) {
     footer {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr .8fr;
         justify-items: center;
+    }
+
+    footer h2 {
+        font-size: 1.1em;
     }
 
     .curiosidades {
         margin-left: 5px;
     }
     .grossario {
-        margin-right: 60px; /*Pra ficar do tamanho do curiosidades*/
+        margin-right: 77px; /*Pra ficar do tamanho do curiosidades*/
     }
 
     .interativo {
-        margin-right: 10em;
+        margin-right: 15em;
     }
 }

@@ -16,11 +16,10 @@
   font-size: 1.3em;
 }
 
-@media (max-width: 911px) {
+@media (max-width: 913px) {
     .main__menu {
         background-color: black;
-        grid-area: 2 / 1 / 2 / 2;
-        position: relative;
+        position: absolute;
     }
 
     .main__menu.ativo {
