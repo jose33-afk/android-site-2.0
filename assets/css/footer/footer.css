@@ -71,7 +71,7 @@ footer h2::after {
     }
 
     .curiosidades {
-        margin-left: 0;
+        margin-left: 5px;
     }
     .grossario {
         margin-right: 60px; /*Pra ficar do tamanho do curiosidades*/
