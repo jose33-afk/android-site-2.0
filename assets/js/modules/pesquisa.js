@@ -7,7 +7,8 @@ export const nomesPesquisar = [
     {"richminer": "rich-miner-cofundador"},
     {"nicksears": "nick-sears-cofundador"},
     {"chriswhite": "chris-white-cofundador"},
-    {"larrypage": "larry-page-cofundador-google"},
+    {"larrypage": "larry-page-cofundador-google"}, //Adicionar - pra poder trocar por espaço com replaceAll, alterar os ids tbm, e adicionar os nomes aqui na lista, 
+    //fazer isso quando terminar a parte estetica.
     {"sergeybrin": "sergey-brin-cofundador-google"},
     {"sundarpichai": "sundar-pichai-ceo-google"},
     
