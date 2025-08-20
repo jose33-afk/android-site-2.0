@@ -1,7 +1,7 @@
 const dadosPesquisa = [ 
   {
     "posicao": 246,
-    "conteudo": ["Android", "sistema", "operacional", "móvel", "baseado", "kernel", "Linux", "desenvolvido", "principalmente", "Google", "Lançado", "oficialmente", "tornou-se", "rapidamente", "sistema", "operacional", "móvel", "utilizado", "mundo", "presente", "bilhões", "dispositivos", "ativos"]
+    "conteudo": ["android", "sistema", "operacional", "móvel", "baseado", "kernel", "Linux", "desenvolvido", "principalmente", "Google", "Lançado", "oficialmente", "tornou-se", "rapidamente", "sistema", "operacional", "móvel", "utilizado", "mundo", "presente", "bilhões", "dispositivos", "ativos"]
   },
   {
     "posicao": 342,

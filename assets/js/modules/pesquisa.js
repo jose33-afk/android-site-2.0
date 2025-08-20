@@ -2,13 +2,21 @@ import { pegaElemento } from "./utils.js";
 import { formatarInput } from "./formatarinput.js"
 import { dadosPesquisa } from "./pesquisadados.js";
 
-
 const cacarElement = (pesquisa) => {
     const dadosPs = dadosPesquisa;
+    let posicaoElm
 
     dadosPs.forEach(Element => { //cada item da array
-        for (let i in Element) { //cada instancia
-            console.log(`Posicao:${Element.posicao} conteudo ${Element.conteudo}`)
+        for (let i in Element) { //cada instancia i posicao/chave
+            removerAcentoArry(Element.conteudo);
+            //console.log(listaFmt)
+            //Element.conteudo.forEach(item => {
+            //    itemFmt = removerAcentos(item.toLowerCase());
+             //   pesquisa = 
+            //})
+        
+    
+            console.log(`---${i}----`)
         }
     })
 }
@@ -32,8 +40,11 @@ const cacarElement = (pesquisa) => {
     }
 }
 
+*/
+//const rolar = (element) => {
 
-
+//}
+ /*
 function rolar(IdElement) { 
     const element = document.querySelector(`#${IdElement}`)
 
@@ -61,6 +72,16 @@ function pesquisa () {
             }
         }
     })
+}
+
+function removerAcentoArry(elementos) {
+    let palavraFmt = []
+    elementos.forEach((palavra) => {
+        palavra = palavra.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        palavraFmt.push(palavra.toLowerCase())
+    })
+    console.log(palavraFmt)
+    return palavraFmt;
 }
 
 export { pesquisa};
