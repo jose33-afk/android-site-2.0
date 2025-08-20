@@ -1,25 +1,30 @@
 import { pegaElemento } from "./utils.js";
 import { formatarInput } from "./formatarinput.js"
 import { dadosPesquisa } from "./pesquisadados.js";
+import { removerAcentoArry } from "./utils.js";
 
 const cacarElement = (pesquisa) => {
     const dadosPs = dadosPesquisa;
-    let posicaoElm
+    let posicaoElm;
+    let templv;
+    let conteudo = [];
 
     dadosPs.forEach(Element => { //cada item da array
         for (let i in Element) { //cada instancia i posicao/chave
-            removerAcentoArry(Element.conteudo);
-            //console.log(listaFmt)
-            //Element.conteudo.forEach(item => {
-            //    itemFmt = removerAcentos(item.toLowerCase());
-             //   pesquisa = 
-            //})
-        
-    
-            console.log(`---${i}----`)
+            conteudo = removerAcentoArry(Element.conteudo);
+            templv = conteudo.find(palavra => palavra == pesquisa)
+            if (templv) {
+                console.log(`Posicao:${Element.posicao}, |Palavra pesquisada ${templv}`) //1
+            }
+            
         }
     })
 }
+/*
+    Como tem mais de uma opcao por um bnt pra proxima posicao e anterior, essa parte e so colocar uma variavel pra guardar a posicao anterior.
+
+*/
+
 
 /*function cacarElement (inputPesquisa) {
     let nomeDoIdDoElemento;
@@ -72,16 +77,6 @@ function pesquisa () {
             }
         }
     })
-}
-
-function removerAcentoArry(elementos) {
-    let palavraFmt = []
-    elementos.forEach((palavra) => {
-        palavra = palavra.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        palavraFmt.push(palavra.toLowerCase())
-    })
-    console.log(palavraFmt)
-    return palavraFmt;
 }
 
 export { pesquisa};

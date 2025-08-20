@@ -26,9 +26,14 @@ function substituirClass (elementAnt, elementNov) {
     }
 }
 
-export { pegaElemento, substituirClass };
+//Retorna uma arrya sem acentos e com tudo minusculo
+function removerAcentoArry(elementos) {
+    let palavraFmt = []
+    elementos.forEach((palavra) => {
+        palavra = palavra.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        palavraFmt.push(palavra.toLowerCase())
+    })
+    return palavraFmt;
+}
 
-/*
-    1 - ele retorna uma nodeList que é mais fraca, nao é uma array de verdade 
-
-*/
+export { pegaElemento, substituirClass, removerAcentoArry };
