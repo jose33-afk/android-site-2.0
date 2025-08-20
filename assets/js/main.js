@@ -3,7 +3,7 @@ import { MoveTitolo } from './modules/titoloMover.js';
 import { pegaElemento, substituirClass } from './modules/utils.js';
 import { ModoDark } from './modules/botaoDark.js';
 import { pesquisa } from './modules/pesquisa.js';
-import { mostrarBarraLateral } from './modules/barraLateral.js';
+//import { mostrarBarraLateral } from './modules/barraLateral.js';
 //import { barraLateral } from './modules/barraLateral.js'
 
 document.addEventListener('DOMContentLoaded', () =>{ //Iniciar Funçoes.

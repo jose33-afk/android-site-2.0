@@ -1,4 +1,4 @@
-import { pegaElemento } from "./utils.js"
+/*import { pegaElemento } from "./utils.js"
 import  { nomesPesquisar } from "./pesquisa.js"
 import { cacarElement } from "./pesquisa.js";
 const botaoNavegar = pegaElemento('.botoes__botao.navegar');
@@ -32,7 +32,7 @@ function inserirLista(ElementInserir) {
 
 //Primeira letra maiuscula.
 function PrimeriaLetraMausc (string) {
-   console.log(string)
+   //console.log(string)
    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
@@ -56,10 +56,10 @@ window.addEventListener('scroll', () => {
 //}
 
 
-export { mostrarBarraLateral };
+/*export { mostrarBarraLateral };
 
 
-/*
+
    1 - Pra transformar em + "px" pra tranformar em uma string, assim ele aceita.
        innerHeight - pega a altura da viwePort, tamanho visivel sem pegar a altura completa do site
 
