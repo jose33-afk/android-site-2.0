@@ -5,26 +5,28 @@ import { removerAcentoArry } from "./utils.js";
 
 const cacarElement = (pesquisa) => {
     const dadosPs = dadosPesquisa;
-    let posicaoElm;
     let templv; 
     let conteudo = [];
-    const historyPs = []
+    const historyPs = [];
+    const indexP = [];
 
     dadosPs.forEach(Element => { //cada item da array
         for (let i in Element) { //cada instancia i posicao/chave
             conteudo = removerAcentoArry(Element.conteudo);
             templv = conteudo.find(palavra => palavra == pesquisa)
             if (templv) { //1
-                console.log(`Posicao:${Element.posicao}, |Palavra pesquisada ${templv}`) 
+                console.log(`Posicao:${Element.posicao}, |Palavra pesquisada ${templv}`) // linha somente pra testes.
+
                 historyPs.push(Element.posicao)
+                if (indexP.find(item => item === Element.num) == undefined) indexP.push(Element.num);
             }
-            
         }
     })
-    if (historyPs.length >= 1) rolar(historyPs);
-    else console.log('Pesquisa n encontrada ou n existe!');
-    
+
+    if (historyPs.length >= 1) rolar(historyPs, indexP);
+    else console.log('Pesquisa n encontrada ou n existe!');//alerta pesonalizado!!
 }
+
 /*
     Como tem mais de uma opcao por um bnt pra proxima posicao e anterior, essa parte e so colocar uma variavel pra guardar a posicao anterior.
 
@@ -35,8 +37,9 @@ const cacarElement = (pesquisa) => {
 */
 
 
-function rolar(posicoes) {
+function rolar(posicoes, index) {
     console.log(posicoes)
+    console.log(index)
     setTimeout(() => {
         window.scrollTo({
             top:posicoes[0],
@@ -44,6 +47,7 @@ function rolar(posicoes) {
         })
     })
 }
+
 
  /*
 function rolar(IdElement) { 
