@@ -6,24 +6,59 @@ import { removerAcentoArry } from "./utils.js";
 const cacarElement = (pesquisa) => {
     const dadosPs = dadosPesquisa;
     let posicaoElm;
-    let templv;
+    let templv; 
     let conteudo = [];
+    const historyPs = []
 
     dadosPs.forEach(Element => { //cada item da array
         for (let i in Element) { //cada instancia i posicao/chave
             conteudo = removerAcentoArry(Element.conteudo);
             templv = conteudo.find(palavra => palavra == pesquisa)
-            if (templv) {
-                console.log(`Posicao:${Element.posicao}, |Palavra pesquisada ${templv}`) //1
+            if (templv) { //1
+                console.log(`Posicao:${Element.posicao}, |Palavra pesquisada ${templv}`) 
+                historyPs.push(Element.posicao)
             }
             
         }
     })
+    if (historyPs.length >= 1) rolar(historyPs);
+    else console.log('Pesquisa n encontrada ou n existe!');
+    
 }
 /*
     Como tem mais de uma opcao por um bnt pra proxima posicao e anterior, essa parte e so colocar uma variavel pra guardar a posicao anterior.
 
+    1 - Agr so fazer as modificacoes no rolar passando element.posicao como parametro, element.posicao e number mas testa isso hj dnv.
+
+    2 - dps que estiver funcionando retirar os ids desnecessarios e alterar a posicoa la no dadospesquisa.
+
 */
+
+
+function rolar(posicoes) {
+    console.log(posicoes)
+    setTimeout(() => {
+        window.scrollTo({
+            top:posicoes[0],
+            behavior: 'smooth'
+        })
+    })
+}
+
+ /*
+function rolar(IdElement) { 
+    const element = document.querySelector(`#${IdElement}`)
+
+    const posicaoDoElement = element.offsetTop;
+    console.log(posicaoDoElement)
+
+    setTimeout(() => {
+            window.scrollTo({
+                top:posicaoDoElement,
+                behavior: 'smooth'
+            })
+    }, 1000)
+}*/
 
 
 /*function cacarElement (inputPesquisa) {
@@ -46,23 +81,6 @@ const cacarElement = (pesquisa) => {
 }
 
 */
-//const rolar = (element) => {
-
-//}
- /*
-function rolar(IdElement) { 
-    const element = document.querySelector(`#${IdElement}`)
-
-    const posicaoDoElement = element.offsetTop;
-    console.log(posicaoDoElement)
-
-    setTimeout(() => {
-            window.scrollTo({
-                top:posicaoDoElement,
-                behavior: 'smooth'
-            })
-    }, 1000)
-}*/
 
 
 function pesquisa () {
