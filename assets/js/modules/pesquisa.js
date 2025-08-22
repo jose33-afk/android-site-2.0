@@ -26,11 +26,14 @@ const cacarElement = (pesquisa) => {
     else console.log('Pesquisa n encontrada ou n existe!');//alerta pesonalizado!!
 }
 
+//Marcacao e rolar ate a posicao da pesquisa.
+const pesquisaOn = {Ativo: 'off'}; //botoes prox e anterior
+const todosP = pegaElemento('p', 2);
 
 function rolar(posicao, index) {
-    const todosP = pegaElemento('p', 2);
     const posP = document.querySelectorAll('p')[index[0]]
-
+    pesquisaOn.Ativo = 'on'
+  
     todosP.forEach(p => p.setAttribute('data-mark', 'off'))
     posP.setAttribute('data-mark', 'yellow')
 
@@ -56,4 +59,4 @@ function pesquisa () {
     })
 }
 
-export { pesquisa};
+export { pesquisa, pesquisaOn, todosP};

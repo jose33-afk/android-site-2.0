@@ -39,6 +39,11 @@
     margin-left: 40px;
 }
 
+/*pesquisa*/
+.botoes__botao.ant, .botoes__botao.prox {
+    display: none;
+}
+
 @keyframes baixo-suave{ /*1*/
     from { transform: translateY(-100%);}
     to {transform: translateY(0);}
