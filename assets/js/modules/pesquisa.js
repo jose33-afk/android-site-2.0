@@ -14,11 +14,10 @@ const cacarElement = (pesquisa) => {
         for (let i in Element) { //cada instancia i posicao/chave
             conteudo = removerAcentoArry(Element.conteudo);
             templv = conteudo.find(palavra => palavra == pesquisa)
-            if (templv) { //1
-                console.log(`Posicao:${Element.posicao}, |Palavra pesquisada ${templv}`) // linha somente pra testes.
 
+            if (templv) { //1
                 historyPs.push(Element.posicao)
-                if (indexP.find(item => item === Element.num) == undefined) indexP.push(Element.num);
+                if (indexP.find(item => item === Element.num) == undefined) indexP.push(Element.num);  
             }
         }
     })
@@ -27,65 +26,21 @@ const cacarElement = (pesquisa) => {
     else console.log('Pesquisa n encontrada ou n existe!');//alerta pesonalizado!!
 }
 
-/*
-    Como tem mais de uma opcao por um bnt pra proxima posicao e anterior, essa parte e so colocar uma variavel pra guardar a posicao anterior.
 
-    1 - Agr so fazer as modificacoes no rolar passando element.posicao como parametro, element.posicao e number mas testa isso hj dnv.
+function rolar(posicao, index) {
+    const todosP = pegaElemento('p', 2);
+    const posP = document.querySelectorAll('p')[index[0]]
 
-    2 - dps que estiver funcionando retirar os ids desnecessarios e alterar a posicoa la no dadospesquisa.
+    todosP.forEach(p => p.setAttribute('data-mark', 'off'))
+    posP.setAttribute('data-mark', 'yellow')
 
-*/
-
-
-function rolar(posicoes, index) {
-    console.log(posicoes)
-    console.log(index)
     setTimeout(() => {
         window.scrollTo({
-            top:posicoes[0],
+            top:posicao[0],
             behavior: 'smooth'
         })
     })
 }
-
-
- /*
-function rolar(IdElement) { 
-    const element = document.querySelector(`#${IdElement}`)
-
-    const posicaoDoElement = element.offsetTop;
-    console.log(posicaoDoElement)
-
-    setTimeout(() => {
-            window.scrollTo({
-                top:posicaoDoElement,
-                behavior: 'smooth'
-            })
-    }, 1000)
-}*/
-
-
-/*function cacarElement (inputPesquisa) {
-    let nomeDoIdDoElemento;
-    
-    nomesPesquisar.forEach(nome => {
-        const nomeDoOjeto = Object.keys(nome);
-    
-        if (nomeDoOjeto == inputPesquisa) {
-            nomeDoIdDoElemento = nome[nomeDoOjeto] // 1
-            return;
-        }
-    })
-
-    if (nomeDoIdDoElemento == undefined) {
-        alert('Não encontrado ou não existe.')
-    } else {
-        rolar(nomeDoIdDoElemento)
-    }
-}
-
-*/
-
 
 function pesquisa () {
     const input = pegaElemento('#pesquisa__input');
