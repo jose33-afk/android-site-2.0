@@ -4,6 +4,9 @@ import { dadosPesquisa } from "./pesquisadados.js";
 import { removerAcentoArry } from "./utils.js";
 import { botoes } from "./botoesPesquisa.js";
 
+const pesquisaOn = {Ativo: 'off'}; //botoes prox e anterior
+const todosP = pegaElemento('p', 2);//global
+
 const cacarElement = (pesquisa) => {
     const dadosPs = dadosPesquisa;
     let templv; 
@@ -23,15 +26,13 @@ const cacarElement = (pesquisa) => {
 
     if (indexP.length >= 1) botoes(indexP);
     else console.log('Pesquisa n encontrada ou n existe!');//alerta pesonalizado!!
+    console.log(indexP.length)
+    if (indexP.length > 1) pesquisaOn.Ativo = 'on'; 
 }
 
 
 //Marcacao e rolar ate a posicao da pesquisa.
-const pesquisaOn = {Ativo: 'off'}; //botoes prox e anterior
-const todosP = pegaElemento('p', 2);//global
-
 function rolar(index) {
-    pesquisaOn.Ativo = 'on'
     let posP = document.querySelectorAll('p')[index]
 
     todosP.forEach(p => p.setAttribute('data-mark', 'off'))
