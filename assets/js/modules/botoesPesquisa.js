@@ -11,7 +11,7 @@ const botoes = (indexs) => {
             console.log(contIndex)
             contIndex++  
             rolar(indexs[contIndex])
-        } else alert('n existe mais palavras')
+        }
     });
 
     bntAnt.addEventListener('click', () => {
