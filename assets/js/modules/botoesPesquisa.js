@@ -18,7 +18,7 @@ const botoes = (indexs) => {
         if (contIndex !== 0) { //!== nao !=
             contIndex--
             rolar(indexs[contIndex])
-        } else alert('Nao da pra voltar mais!!')
+        }
     });
 
     rolar(indexs[0]) //Primeira vez
