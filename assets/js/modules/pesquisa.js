@@ -2,12 +2,12 @@ import { pegaElemento } from "./utils.js";
 import { formatarInput } from "./formatarinput.js"
 import { dadosPesquisa } from "./pesquisadados.js";
 import { removerAcentoArry } from "./utils.js";
+import { botoes } from "./botoesPesquisa.js";
 
 const cacarElement = (pesquisa) => {
     const dadosPs = dadosPesquisa;
     let templv; 
     let conteudo = [];
-    const historyPs = [];
     const indexP = [];
 
     dadosPs.forEach(Element => { //cada item da array
@@ -16,33 +16,31 @@ const cacarElement = (pesquisa) => {
             templv = conteudo.find(palavra => palavra == pesquisa)
 
             if (templv) { //1
-                historyPs.push(Element.posicao)
                 if (indexP.find(item => item === Element.num) == undefined) indexP.push(Element.num);  
             }
         }
     })
 
-    if (historyPs.length >= 1) rolar(historyPs, indexP);
+    if (indexP.length >= 1) botoes(indexP);
     else console.log('Pesquisa n encontrada ou n existe!');//alerta pesonalizado!!
 }
 
+
 //Marcacao e rolar ate a posicao da pesquisa.
 const pesquisaOn = {Ativo: 'off'}; //botoes prox e anterior
-const todosP = pegaElemento('p', 2);
+const todosP = pegaElemento('p', 2);//global
 
-function rolar(posicao, index) {
-    const posP = document.querySelectorAll('p')[index[0]]
+function rolar(index) {
     pesquisaOn.Ativo = 'on'
-  
+    let posP = document.querySelectorAll('p')[index]
+
     todosP.forEach(p => p.setAttribute('data-mark', 'off'))
     posP.setAttribute('data-mark', 'yellow')
-
-    setTimeout(() => {
-        window.scrollTo({
-            top:posicao[0],
-            behavior: 'smooth'
-        })
-    })
+    
+    posP.scrollIntoView({ //1
+        behavior: 'smooth', 
+        block: 'start'  // 'start' = topo da tela
+    });
 }
 
 function pesquisa () {
@@ -59,4 +57,9 @@ function pesquisa () {
     })
 }
 
-export { pesquisa, pesquisaOn, todosP};
+export { pesquisa, pesquisaOn, todosP, rolar};
+
+/*
+    pega a posicao exata do elemento na view port muito melhor que o 
+    windonsToscroll
+*/
