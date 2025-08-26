@@ -1,19 +1,19 @@
 :root {
-    --cor-strong:#26abee;   
-    --secondary: #06b6d4;      
-    --accent: #10b981;        
-    --cor-titolo: #25f7b1; 
-    --background: #f0f9ff;   
-    --background-night: #1c2129; 
-    --surface: #ffffff;       
-    --text-primary: #0f172a;  
-    --text-secondary: #475569; 
+  --cor-strong: #26abee;
+  --secondary: #06b6d4;
+  --accent: #10b981;
+  --cor-titolo: #25f7b1;
+  --background: #f0f9ff;
+  --background-night: #1c2129;
+  --surface: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
 
-    --color-border:  #5f708a;
-    --text-footer: #bdc6d4;
-    --link-hover-footer: #89909b;
-    --cor-subtitolo:  #0284c7;
-    --background-introducao: linear-gradient(to right, #10b9818f, #06b5d4b4);
-    --background-menu-lateral: linear-gradient(to bottom, #10b9818f, #06b5d4b4);
-    --cor-caixa-destaque: #0285c71f;
+  --color-border: #5f708a;
+  --text-footer: #bdc6d4;
+  --link-hover-footer: #89909b;
+  --cor-subtitolo: #0284c7;
+  --background-introducao: linear-gradient(to right, #10b9818f, #06b5d4b4);
+  --background-menu-lateral: linear-gradient(to bottom, #10b9818f, #06b5d4b4);
+  --cor-caixa-destaque: #0285c71f;
 }

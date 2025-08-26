@@ -1,89 +1,94 @@
 #pesquisa__input {
-    all: unset; 
-    background-color: var(--surface);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
-    color: var(--text-primary);
-    flex: 0 1;
-    text-align: center;
-    height: 35px;
-    width: 225px;
+  all: unset;
+  background-color: var(--surface);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+  color: var(--text-primary);
+  flex: 0 1;
+  text-align: center;
+  height: 35px;
+  width: 225px;
 }
 
 .pesquisa {
-    position: relative;
-    margin: 5px 20px 5px 0;
+  position: relative;
+  margin: 5px 20px 5px 0;
 }
 
 .pesquisa__botao {
-    all: unset;
-    padding: 2px;
-    position: absolute;
-    top: 1px;
-    right: 5px;
-    left: auto;
-    height: 28px;
-    width: 28px;
+  all: unset;
+  padding: 2px;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  left: auto;
+  height: 28px;
+  width: 28px;
 }
 
 .pesquisa__botao--img {
-    background-image: url(../../img/icons/Search.png); /*Usar barra pra n dar probelma*/
-    background-size: cover;
-    background-position: center center;
-    height: 95%;
+  background-image: url(../../img/icons/Search.png); /*Usar barra pra n dar probelma*/
+  background-size: cover;
+  background-position: center center;
+  height: 95%;
 }
 
 .pesquisa__linha {
-    background-color: var(--color-border);
-    top: 24px;
-    left: 19px;
-    opacity: 0;
-    position: absolute;
-    height: 2px;
-    width: 183px;
+  background-color: var(--color-border);
+  top: 24px;
+  left: 19px;
+  opacity: 0;
+  position: absolute;
+  height: 2px;
+  width: 183px;
 }
 
 @keyframes piscar {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-#pesquisa__input:focus + .pesquisa__linha{
-    animation: piscar 1.2s ease-in-out infinite;
-}
-
-#pesquisa__input:focus ~ .pesquisa__botao{ /*~ o elemento tem que estar no msm pai*/
+  0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
-    transition: opacity .1s ease;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#pesquisa__input:focus + .pesquisa__linha {
+  animation: piscar 1.2s ease-in-out infinite;
+}
+
+#pesquisa__input:focus ~ .pesquisa__botao {
+  /*~ o elemento tem que estar no msm pai*/
+  opacity: 0;
+  transition: opacity 0.1s ease;
 }
 
 @media (max-width: 767px) {
-    
-    #pesquisa__input {
-        width: 0;
-        font-size: 14px;
-    }
+  #pesquisa__input {
+    width: 0;
+    font-size: 14px;
+  }
 
-    #pesquisa__input.tamanho {
-        width: 220px;
-    }
+  #pesquisa__input.tamanho {
+    width: 220px;
+  }
 
-    .pesquisa__linha{
-        width: 0;
-    }
+  .pesquisa__linha {
+    width: 0;
+  }
 
-    .pesquisa__linha.tamanho{
-        width: 183px;
-    }
+  .pesquisa__linha.tamanho {
+    width: 183px;
+  }
 
-    .pesquisa {
-        margin-right:5px;
-    }
-    
-    .pesquisa__botao {
-        border-radius: 10px;
-        background-color: var(--surface);
-    }
+  .pesquisa {
+    margin-right: 5px;
+  }
 
+  .pesquisa__botao {
+    border-radius: 10px;
+    background-color: var(--surface);
+  }
 }

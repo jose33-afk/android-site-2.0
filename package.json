@@ -1,0 +1,29 @@
+{
+  "name": "android-site-2.0",
+  "version": "1.0.0",
+  "description": "materia sobre o android",
+  "homepage": "https://github.com/jose33-afk/android-site-2.0#readme",
+  "bugs": {
+    "url": "https://github.com/jose33-afk/android-site-2.0/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jose33-afk/android-site-2.0.git"
+  },
+  "license": "ISC",
+  "author": "Klein",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "npx eslint ."
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.10.0",
+    "@eslint/js": "^9.34.0",
+    "@eslint/json": "^0.13.2",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0",
+    "prettier": "3.6.2"
+  }
+}

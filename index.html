@@ -1,593 +1,1103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RobôVerde</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="top">
-            <div class="verde"></div>
-            <div class="inicio">
-                <a class="inicio__link" href="#">
-                    <img class="inicio__logo" src="./assets/img/images-logo-menor.png" alt="logo-site">
-                </a>
-                <h1 class="inicio__titolo">Robô verde</h1>
-            </div>
-            <label class="inicio__switch">
-                <input type="checkbox" class="switch__checkbox">
-                <span class="switch__bolinha"></span>
-            </label>
+      <div class="top">
+        <div class="verde"></div>
+        <div class="inicio">
+          <a class="inicio__link" href="#">
+            <img
+              class="inicio__logo"
+              src="./assets/img/images-logo-menor.png"
+              alt="logo-site"
+            />
+          </a>
+          <h1 class="inicio__titolo">Robô verde</h1>
+        </div>
+        <label class="inicio__switch">
+          <input type="checkbox" class="switch__checkbox" />
+          <span class="switch__bolinha"></span>
+        </label>
+      </div>
+
+      <nav class="botoes">
+        <div class="botoes__grid-botao">
+          <button class="botoes__botao inicio">Início</button>
+          <button class="botoes__botao navegar">navegar</button>
+          <button class="botoes__botao ant">anteriror</button>
+          <button class="botoes__botao prox">proximo</button>
         </div>
 
-        <nav class="botoes">
-            <div class="botoes__grid-botao">
-                <button class="botoes__botao inicio">Início</button>
-                <button class="botoes__botao navegar">navegar</button>
-                <button class="botoes__botao ant">anteriror</button>
-                <button class="botoes__botao prox">proximo</button>
-            </div>
-            
-            <div class="pesquisa">
-                <input type="text" name="pesquisa__input" id="pesquisa__input"     placeholder="Pesquisar por Títolo...">
-                <div class="pesquisa__linha"></div>
-                <button class="pesquisa__botao">
-                    <div class="pesquisa__botao--img"></div>
-                </button>
-            </div>
-        </nav>
+        <div class="pesquisa">
+          <input
+            type="text"
+            name="pesquisa__input"
+            id="pesquisa__input"
+            placeholder="Pesquisar por Títolo..."
+          />
+          <div class="pesquisa__linha"></div>
+          <button class="pesquisa__botao">
+            <div class="pesquisa__botao--img"></div>
+          </button>
+        </div>
+      </nav>
     </header>
 
-   
+    <main>
+      <!--Criar um grid, 2 colunas-->
+      <nav class="main__menu">
+        <ul class="menu__lista"></ul>
+      </nav>
 
-    <main> <!--Criar um grid, 2 colunas-->
-        <nav class="main__menu">
-            <ul class="menu__lista">
+      <section class="section-contener">
+        <section class="section-contener__texto-completo">
+          <!--Introduçao-->
+          <section id="texto-completo__section-introducao">
+            <h1 id="introducao" class="section-introducao__titolo">
+              INTRODUÇÃO
+            </h1>
+            <div class="section-introducao__linha linha"></div>
+            <h2 class="section-introducao__subtitolo">O que é o Android</h2>
+            <p class="section-introducao__paragrafo">
+              O <strong>Android</strong> é um sistema operacional móvel baseado
+              no kernel Linux, desenvolvido principalmente pelo
+              <strong>Google</strong>. Lançado oficialmente em
+              <strong>2008</strong>, tornou-se rapidamente o sistema operacional
+              móvel mais utilizado no mundo, presente em mais de
+              <strong>3 bilhões de dispositivos ativos</strong>.
+            </p>
+            <p class="section-introducao__paragrafo">
+              Diferentemente de outros sistemas proprietários, o Android adota
+              uma filosofia de <strong>código aberto</strong> através do
+              <strong>Android Open Source Project (AOSP)</strong>. Isso
+              significa que fabricantes podem modificar e personalizar o sistema
+              conforme suas necessidades, criando suas próprias interfaces e
+              funcionalidades.
+            </p>
+
+            <h2 class="section-introducao__subtitolo">Importância Global</h2>
+            <p class="section-introducao__paragrafo">
+              O Android revolucionou o mercado de smartphones ao oferecer uma
+              alternativa <strong>gratuita e flexível</strong> aos sistemas
+              proprietários. Sua proposta de democratizar o acesso à tecnologia
+              móvel transformou bilhões de vidas ao redor do mundo,
+              especialmente em países emergentes onde o custo dos dispositivos é
+              um fator crucial.
+            </p>
+
+            <p class="section-introducao__paragrafo">
+              Atualmente, o Android possui aproximadamente
+              <strong>71% da participação global</strong> no mercado de sistemas
+              operacionais móveis, sendo usado por mais de
+              <strong>1.300 fabricantes diferentes</strong> em todo o mundo.
+            </p>
+
+            <h2 class="section-introducao__subtitolo">Filosofia Open Source</h2>
+            <p class="section-introducao__paragrafo">
+              A decisão de tornar o Android <strong>open source</strong> foi
+              estratégica para sua adoção massiva. Fabricantes como
+              <strong>Samsung, Xiaomi, Huawei</strong> e centenas de outros
+              puderam criar suas versões customizadas sem custos de
+              licenciamento. Isso resultou em uma diversidade impressionante de
+              dispositivos, desde smartphones básicos de
+              <strong>$50</strong> até flagships premium de mais de
+              <strong>$1000</strong>.
+            </p>
+          </section>
+          <!--Origens e Fundaçao-->
+          <section id="texto-completo__section-origens-e-fundacao">
+            <h1
+              id="origens-e-fundacao-2003-2005"
+              class="section-origens-e-fundacao__titolo"
+            >
+              ORIGENS E FUNDAÇÃO (2003-2005)
+            </h1>
+            <div class="linha"></div>
+            <h2 class="section-origens-e-fundacao__subititolo">
+              A Criação da Android Inc.
+            </h2>
+            <p class="section-origens-e-fundacao__paragrafo">
+              Em <strong>outubro de 2003</strong>, quatro visionários da
+              tecnologia se reuniram em Palo Alto, Califórnia, para fundar a
+              <strong>Android Inc.</strong>
+              <strong id="andy-rubin-pai-do-android">Andy Rubin</strong>,
+              conhecido como "pai do Android", liderava o grupo junto com
+              <strong id="rich-miner-cofundador">Rich Miner</strong>,
+              <strong id="nick-sears-cofundador">Nick Sears</strong> e
+              <strong id="chris-white-cofundador">Chris White</strong>. Todos
+              eram veteranos da indústria tech, com experiências em empresas
+              como Apple, Microsoft e outras startups de tecnologia móvel.
+            </p>
+
+            <p class="section-origens-e-fundacao__paragrafo">
+              A visão inicial da empresa era ambiciosa: criar um sistema
+              operacional que pudesse tornar qualquer dispositivo
+              <strong
+                >"mais inteligente e consciente da localização e preferências do
+                usuário"</strong
+              >. Inicialmente, o foco estava em câmeras digitais, mas os
+              fundadores logo perceberam que o mercado de câmeras era limitado
+              demais para sustentar suas ambições.
+            </p>
+
+            <h2 class="section-origens-e-fundacao__subititolo">
+              A Mudança de Foco
+            </h2>
+            <p class="section-origens-e-fundacao__paragrafo">
+              Em <strong>2004</strong>, a Android Inc. pivotou completamente sua
+              estratégia. O surgimento dos primeiros smartphones e a crescente
+              conectividade móvel mostraram que o futuro estava nos dispositivos
+              móveis inteligentes. A empresa começou a desenvolver um sistema
+              operacional móvel que seria:
+            </p>
+
+            <ul class="section-origens-e-fundacao__lista">
+              <li class="section-origens-e-fundacao__lista--item">
+                <strong>Completamente gratuito</strong> para fabricantes
+              </li>
+              <li class="section-origens-e-fundacao__lista--item">
+                Baseado em <strong>padrões abertos</strong>
+              </li>
+              <li class="section-origens-e-fundacao__lista--item">
+                <strong>Altamente personalizável</strong>
+              </li>
+              <li class="section-origens-e-fundacao__lista--item">
+                Integrado com <strong>serviços de internet</strong>
+              </li>
             </ul>
-        </nav>
-
-        <section class="section-contener">
-            <section class="section-contener__texto-completo">
-                <!--Introduçao-->
-                <section id="texto-completo__section-introducao">
-                    <h1 id="introducao" class="section-introducao__titolo">INTRODUÇÃO</h1>
-                    <div class="section-introducao__linha linha"></div>
-                    <h2 class="section-introducao__subtitolo">O que é o Android</h2>
-                    <p class="section-introducao__paragrafo">
-                        O <strong>Android</strong> é um sistema operacional móvel baseado no kernel Linux, desenvolvido principalmente pelo <strong>Google</strong>. Lançado oficialmente em <strong>2008</strong>, tornou-se rapidamente o sistema operacional móvel mais utilizado no mundo, presente em mais de <strong>3 bilhões de dispositivos ativos</strong>.
-                    </p>
-                    <p class="section-introducao__paragrafo">
-                        Diferentemente de outros sistemas proprietários, o Android adota uma filosofia de <strong>código aberto</strong> através do <strong>Android Open Source Project (AOSP)</strong>. Isso significa que fabricantes podem modificar e personalizar o sistema conforme suas necessidades, criando suas próprias interfaces e funcionalidades.
-                    </p>
-
-                    <h2 class="section-introducao__subtitolo">Importância Global</h2>
-                    <p class="section-introducao__paragrafo">
-                        O Android revolucionou o mercado de smartphones ao oferecer uma alternativa <strong>gratuita e flexível</strong> aos sistemas proprietários. Sua proposta de democratizar o acesso à tecnologia móvel transformou bilhões de vidas ao redor do mundo, especialmente em países emergentes onde o custo dos dispositivos é um fator crucial.
-                    </p>
-
-                    <p class="section-introducao__paragrafo">
-                        Atualmente, o Android possui aproximadamente <strong>71% da participação global</strong> no mercado de sistemas operacionais móveis, sendo usado por mais de <strong>1.300 fabricantes diferentes</strong> em todo o mundo.
-                    </p>
-
-                    <h2 class="section-introducao__subtitolo">Filosofia Open Source</h2>
-                    <p class="section-introducao__paragrafo">
-                        A decisão de tornar o Android <strong>open source</strong> foi estratégica para sua adoção massiva. Fabricantes como <strong>Samsung, Xiaomi, Huawei</strong> e centenas de outros puderam criar suas versões customizadas sem custos de licenciamento. Isso resultou em uma diversidade impressionante de dispositivos, desde smartphones básicos de <strong>$50</strong> até flagships premium de mais de <strong>$1000</strong>.
-                    </p>
-                </section>
-                <!--Origens e Fundaçao-->
-                <section id="texto-completo__section-origens-e-fundacao">
-                    <h1 id="origens-e-fundacao-2003-2005" class="section-origens-e-fundacao__titolo">ORIGENS E FUNDAÇÃO (2003-2005)</h1>
-                    <div class="linha"></div>
-                    <h2 class="section-origens-e-fundacao__subititolo">A Criação da Android Inc.</h2>
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        Em <strong>outubro de 2003</strong>, quatro visionários da tecnologia se reuniram em Palo Alto, Califórnia, para fundar a <strong>Android Inc.</strong> <strong id="andy-rubin-pai-do-android">Andy Rubin</strong>, conhecido como "pai do Android", liderava o grupo junto com <strong id="rich-miner-cofundador">Rich Miner</strong>, <strong id="nick-sears-cofundador">Nick Sears</strong> e <strong id="chris-white-cofundador">Chris White</strong>. Todos eram veteranos da indústria tech, com experiências em empresas como Apple, Microsoft e outras startups de tecnologia móvel.
-                    </p>
-
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        A visão inicial da empresa era ambiciosa: criar um sistema operacional que pudesse tornar qualquer dispositivo <strong>"mais inteligente e consciente da localização e preferências do usuário"</strong>. Inicialmente, o foco estava em câmeras digitais, mas os fundadores logo perceberam que o mercado de câmeras era limitado demais para sustentar suas ambições.
-                    </p>
-
-                    <h2 class="section-origens-e-fundacao__subititolo">A Mudança de Foco</h2>
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        Em <strong>2004</strong>, a Android Inc. pivotou completamente sua estratégia. O surgimento dos primeiros smartphones e a crescente conectividade móvel mostraram que o futuro estava nos dispositivos móveis inteligentes. A empresa começou a desenvolver um sistema operacional móvel que seria:
-                    </p>
-
-                    <ul class="section-origens-e-fundacao__lista">
-                        <li class="section-origens-e-fundacao__lista--item">
-                            <strong>Completamente gratuito</strong> para fabricantes
-                        </li>
-                        <li class="section-origens-e-fundacao__lista--item">
-                            Baseado em <strong>padrões abertos</strong>
-                        </li>
-                        <li class="section-origens-e-fundacao__lista--item">
-                            <strong>Altamente personalizável</strong>
-                        </li>
-                        <li class="section-origens-e-fundacao__lista--item">
-                            Integrado com <strong>serviços de internet</strong>
-                        </li>
-                    </ul>
-
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        Esta mudança de direção foi crucial, pois antecipou em anos a revolução smartphone que estaria por vir.
-                    </p>
-
-                    <h2 class="section-origens-e-fundacao__subititolo">A Aquisição pelo Google (2005)</h2>
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        Em <strong>julho de 2005</strong>, o Google fez uma jogada que mudaria para sempre o cenário da tecnologia móvel. A empresa de Mountain View adquiriu a Android Inc. por aproximadamente <strong>$50 milhões</strong>, em uma transação que na época passou relativamente despercebida pela mídia especializada.
-                    </p>
-
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        <strong id="larry-page-cofundador-google">Larry Page</strong> e <strong id="sergey-brin-cofundador-google">Sergey Brin</strong>, fundadores do Google, haviam percebido que o futuro da internet estava nos dispositivos móveis. Com o crescimento explosivo do uso de smartphones previsível, era crucial para o Google garantir que seus serviços estariam facilmente acessíveis nestes novos dispositivos.
-                    </p>
-
-                    <h2 class="section-origens-e-fundacao__subititolo">Integração Estratégica</h2>
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        Sob a liderança do Google, o projeto Android ganhou recursos praticamente ilimitados e acesso a alguns dos melhores engenheiros de software do mundo. <strong>Andy Rubin</strong> foi nomeado Vice-Presidente de Engenharia e continuou liderando o desenvolvimento do sistema.
-                    </p>
-
-                    <p class="section-origens-e-fundacao__paragrafo">
-                        A estratégia do Google era clara: criar um ecossistema móvel que promovesse o uso de seus serviços (<strong>busca, Gmail, Maps, YouTube</strong>) enquanto oferecia aos fabricantes uma alternativa gratuita aos sistemas proprietários existentes.
-                    </p>
-                </section>
-                <!--Desemvolvimento e primeira versão-->
-                <section id="texto-completo__section-desenvolvimento-e-primeira-versao">
-                    <h1 id="desenvolvimento-e-primeira-versao-2007-2008" class="desenvolvimento-e-primeira-versao__titolo">DESENVOLVIMENTO E PRIMEIRA VERSÃO (2007-2008)</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="desenvolvimento-e-primeira-versao__subtitolo">Open Handset Alliance</h2>
-                    <p class="desenvolvimento-e-primeira-versao__paragrafo">
-                        Em <strong>5 de novembro de 2007</strong>, o Google deu um passo audacioso ao anunciar a <strong>Open Handset Alliance (OHA)</strong>, um consórcio de <strong>84 empresas</strong> líderes em tecnologia móvel. Esta aliança incluía fabricantes de hardware, desenvolvedores de software, operadoras de telecomunicações e fabricantes de semicondutores.
-                    </p>
-
-                    <p class="desenvolvimento-e-primeira-versao__paragrafo">
-                        Os membros fundadores eram impressionantes: <strong>Google (líder), HTC, Intel, Motorola, Samsung, Sprint, T-Mobile, NVIDIA, Qualcomm</strong>, e muitas outras. O objetivo era desenvolver padrões abertos para dispositivos móveis e promover um ecossistema competitivo e inovador.
-                    </p>
-
-                    <h2 class="desenvolvimento-e-primeira-versao__subtitolo">Android 1.0 - Apple Pie</h2>
-                    <div class="caixa-destaque">
-                        <p class="desenvolvimento-e-primeira-versao__paragrafo">
-                            Em <strong>23 de setembro de 2008</strong>, a HTC lançou o <strong id="htc-dream-t-mobile-g1-2008-primeiro-android">Dream (conhecido como T-Mobile G1 nos EUA)</strong>, o primeiro smartphone comercial com Android. Este dispositivo histórico custava <strong>$179</strong> com contrato de dois anos e apresentava especificações que hoje parecem primitivas: tela de <strong>3.2 polegadas</strong>, <strong>192MB de RAM</strong> e <strong>256MB</strong> de armazenamento interno.
-                        </p>
-                    </div>
-                    
-                    <p class="desenvolvimento-e-primeira-versao__paragrafo">
-                        O <strong>Android 1.0</strong> incluía recursos que se tornaram fundamentais para smartphones:
-                    </p>
-
-                    <ul class="desenvolvimento-e-primeira-versao__lista">
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            Interface touchscreen com <strong>teclado físico QWERTY deslizante</strong></li>
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            <strong>Navegador web completo</strong> baseado no WebKit</li>
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            <strong>Gmail integrado</strong> com sincronização automática</li>
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            <strong>Google Maps</strong> com localização por GPS</li>
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            <strong>Android Market</strong> para download de aplicativos</li>
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            <strong>YouTube player integrado</strong></li>
-                        <li class="desenvolvimento-e-primeira-versao__lista--item">
-                            Suporte nativo para <strong>Java applications</strong></li>
-                    </ul>
-                </section>
-                <!--Primeiras evoluções-->
-                <section id="texto-completo__section-primeiras-evolucoes">
-                    <h1 id="primeiras-evolucoes-2009-2010" class="section-primeiras-evolucoes__titolo">PRIMEIRAS EVOLUÇÕES (2009-2010)</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="section-primeiras-evolucoes__subititolo">Android 1.1 - Banana Bread (2009)</h2>
-                    <p class="section-primeiras-evolucoes__paragrafo">
-                        Lançado em <strong>fevereiro de 2009</strong>, o Android 1.1 foi uma atualização focada em correções e refinamentos. Embora não tenha introduzido recursos visuais dramáticos, esta versão foi crucial para estabilizar a plataforma e corrigir bugs críticos que afetavam a experiência do usuário.
-                    </p>
-
-                    <h2 class="section-primeiras-evolucoes__subititolo">Android 1.5 - Cupcake (2009)</h2>
-                    <p class="section-primeiras-evolucoes__paragrafo">
-                        O <strong>Android 1.5</strong>, lançado em <strong>abril de 2009</strong>, marcou o início da tradição de nomear versões com nomes de doces em ordem alfabética. Cupcake introduziu várias funcionalidades que se tornaram fundamentais para a experiência Android:
-                    </p>
-
-                    <ul class="section-primeiras-evolucoes__lista">
-                        <li class="section-primeiras-evolucoes__lista--item">
-                            <strong>Widgets na Tela Inicial</strong>: Pela primeira vez, usuários podiam adicionar widgets interativos na tela inicial</li>
-                        <li class="section-primeiras-evolucoes__lista--item">
-                            <strong>Teclado Virtual</strong>: Android introduziu um teclado virtual na tela mais sofisticado</li>
-                        <li class="section-primeiras-evolucoes__lista--item">
-                            <strong>Gravação de Vídeo</strong>: O sistema passou a suportar gravação de vídeo nativa</li>
-                    </ul>
-
-                    <h2 class="section-primeiras-evolucoes__subititolo">Android 1.6 - Donut (2009)</h2>
-                    <p class="section-primeiras-evolucoes__paragrafo">
-                        Lançado em <strong>setembro de 2009</strong>, o Donut foi uma versão focada em expandir a compatibilidade do Android. Com diferentes fabricantes lançando dispositivos com especificações variadas, era crucial que o sistema se adaptasse a esta diversidade.
-                    </p>
-
-                    <h2 class="section-primeiras-evolucoes__subititolo">Android 2.0/2.1 - Eclair (2009-2010)</h2>
-                    <p class="section-primeiras-evolucoes__paragrafo">
-                        O <strong>Eclair</strong>, lançado inicialmente em <strong>outubro de 2009</strong> (versão 2.0) e refinado em <strong>janeiro de 2010</strong> (versão 2.1), representou um salto qualitativo significativo na evolução do Android.
-                    </p>
-
-                    <h2 class="section-primeiras-evolucoes__subititolo">Android 2.2 - Froyo (2010)</h2>
-                    <p class="section-primeiras-evolucoes__paragrafo">
-                        O <strong>Froyo (Frozen Yogurt)</strong>, lançado em <strong>maio de 2010</strong>, foi uma das atualizações mais impactantes na história inicial do Android. Esta versão focou intensamente em performance e funcionalidades avançadas:
-                    </p>
-
-                    <ul class="section-primeiras-evolucoes__lista">
-                        <li class="section-primeiras-evolucoes__lista--item">
-                            <strong>Compilador JIT</strong>: Melhorias de performance de 2 a 5 vezes</li>
-                        <li  class="section-primeiras-evolucoes__lista--item">
-                            <strong>Wi-Fi Hotspot</strong>: Android passou a funcionar como ponto de acesso Wi-Fi</li>
-                        <li  class="section-primeiras-evolucoes__lista--item">
-                            <strong>Adobe Flash</strong>: Suporte completo para Adobe Flash Player</li>
-                    </ul>
-                </section>
-                <!--consolidaçao e crescimento-->
-                <section id="texto-completo__section-consolidacao-e-crescimento">
-                    <h1 id="consolidacao-e-crescimento-2010-2013" class="section-consolidacao-e-crescimento__titolo">CONSOLIDAÇÃO E CRESCIMENTO (2010-2013)</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="section-consolidacao-e-crescimento__subtitolo">Android 2.3 - Gingerbread (2010-2011)</h2>
-                    <p class="section-consolidacao-e-crescimento__paragrafo">
-                        O <strong>Gingerbread</strong>, lançado em <strong>dezembro de 2010</strong>, tornou-se uma das versões mais duradouras e populares do Android. Focou em refinamento da interface do usuário, melhor gerenciamento de energia, e novos recursos de comunicação.
-                    </p>
-
-                    <h2 class="section-consolidacao-e-crescimento__subtitolo">Android 3.0 - Honeycomb (2011)</h2>
-                    <p class="section-consolidacao-e-crescimento__paragrafo">
-                        O <strong>Honeycomb</strong> marcou uma mudança estratégica importante para o Android: a primeira versão dedicada exclusivamente a <strong>tablets</strong>. Com o iPad dominando o mercado de tablets, o Google precisava de uma resposta rápida e efetiva.
-                    </p>
-
-                    <h2 class="section-consolidacao-e-crescimento__subtitolo">Android 4.0 - Ice Cream Sandwich (2011)</h2>
-                    <p class="section-consolidacao-e-crescimento__paragrafo">
-                        O <strong>Ice Cream Sandwich</strong>, lançado em <strong>outubro de 2011</strong>, foi um marco na história do Android. Pela primeira vez, uma única versão do sistema operacional foi projetada para funcionar tanto em <strong>smartphones quanto em tablets</strong>, unificando a experiência do usuário.
-                    </p>
-
-                    <h2 class="section-consolidacao-e-crescimento__subtitolo">Android 4.1/4.2/4.3 - Jelly Bean (2012-2013)</h2>
-                    <p class="section-consolidacao-e-crescimento__paragrafo">
-                        A série <strong>Jelly Bean</strong> representou o período de maior refinamento técnico na história do Android até então. Estas versões focaram intensamente em performance, fluidez, e recursos inteligentes:
-                    </p>
-
-                    <ul class="section-consolidacao-e-crescimento__lista">
-                        <li class="section-consolidacao-e-crescimento__lista--item">
-                            <strong>Project Butter</strong>: Interface do Android tão fluida quanto 60 frames por segundo</li>
-                        <li class="section-consolidacao-e-crescimento__lista--item"><strong>Google Now</strong>: Assistente preditivo revolucionário</li>
-                        <li class="section-consolidacao-e-crescimento__lista--item"><strong>Notificações Expandidas</strong>: Capacidade de expandir e mostrar mais informações</li>
-                    </ul>
-                </section>
-                <!--Era material e design-->
-                <section id="texto-completo__section-era-material-e-design">
-                    <h1 id="era-material-design-2014-2016" class="section-era-material-e-design__titolo">ERA MATERIAL DESIGN (2014-2016)</h1><div class="linha"></div>
-
-                    <h2  class="section-era-material-e-design__subtitolo">Android 5.0/5.1 - Lollipop (2014-2015)</h2>
-                    <p  class="section-era-material-e-design__paragrafo">
-                        O <strong>Lollipop</strong> representou a maior reformulação visual na história do Android. Introduziu o <strong>Material Design</strong>, uma linguagem de design que não apenas mudou a aparência do Android, mas influenciou todo o design digital moderno.
-                    </p>
-
-                    <ul  class="section-era-material-e-design__lista">
-                        <li  class="section-era-material-e-design__lista--item">
-                            <strong>Material Design Philosophy</strong>: Baseado em princípios de design físico</li>
-                        <li class="section-era-material-e-design__lista--item">
-                            <strong>ART Runtime</strong>: Substituição completa do runtime Dalvik</li>
-                        <li class="section-era-material-e-design__lista--item">
-                            <strong>Project Volta</strong>: Otimizações de bateria</li>
-                    </ul>
-
-                    <h2 class="section-era-material-e-design__subtitolo">Android 6.0 - Marshmallow (2015)</h2>
-                    <p class="section-era-material-e-design__paragrafo">
-                        O <strong>Marshmallow</strong> focou em refinamento e funcionalidades que prepararam o Android para a próxima década de computação móvel:
-                    </p>
-
-                    <ul class="section-era-material-e-design__lista">
-                        <li class="section-era-material-e-design__lista--item">
-                            <strong>Runtime Permissions</strong>: Revolução no sistema de permissões</li>
-                        <li class="section-era-material-e-design__lista--item">
-                            <strong>Doze Mode</strong>: Sistema inteligente de hibernação</li>
-                        <li class="section-era-material-e-design__lista--item">
-                            <strong>Google Now On Tap</strong>: Informações contextuais</li>
-                    </ul>
-                </section>
-                <!--Maturidade e inteligencia-->
-                <section id="texto-completo__section-maturidade-e-inteligencia">
-                    <h1 id="maturidade-e-inteligencia-2016-2019" class="section-maturidade-e-inteligencia__titolo">MATURIDADE E INTELIGÊNCIA (2016-2019)</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="section-maturidade-e-inteligencia__subtitolo">Android 7.0/7.1 - Nougat (2016)</h2>
-                    <p class="section-maturidade-e-inteligencia__paragrafo">
-                        O <strong>Nougat</strong> marcou a entrada do Android na era da multitarefa avançada e produtividade móvel:
-                    </p>
-
-                    <ul class="section-maturidade-e-inteligencia__lista">
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Multi-Window (Split Screen)</strong>: Dois aplicativos simultaneamente</li>
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Notificações Inline Reply</strong>: Responder mensagens das notificações</li>
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Vulkan API</strong>: Performance superior em jogos</li>
-                    </ul>
-
-                    <h2 class="section-maturidade-e-inteligencia__subtitolo">Android 8.0/8.1 - Oreo (2017)</h2>
-                    <p class="section-maturidade-e-inteligencia__paragrafo">
-                        O <strong>Oreo</strong> introduziu mudanças arquiteturais fundamentais:
-                    </p>
-
-                    <ul class="section-maturidade-e-inteligencia__lista">
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Project Treble</strong>: Separação entre sistema Android e código do fabricante</li>
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Notification Channels</strong>: Controle granular de notificações</li>
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Picture-in-Picture Mode</strong>: Vídeos em janela pequena</li>
-                    </ul>
-
-                    <h2 class="section-maturidade-e-inteligencia__subtitolo">Android 9 - Pie (2018)</h2>
-                    <p class="section-maturidade-e-inteligencia__paragrafo">
-                        O <strong>Pie</strong> representou a entrada completa do Android na era da inteligência artificial:
-                    </p>
-
-                    <ul class="section-maturidade-e-inteligencia__lista">
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Gesture Navigation</strong>: Sistema baseado em gestos</li>
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Adaptive Battery</strong>: Machine learning para otimização</li>
-                        <li class="section-maturidade-e-inteligencia__lista--item">
-                            <strong>Digital Wellbeing</strong>: Controle do tempo de uso</li>
-                    </ul>
-                </section>
-                <!---->
-                <section id="texto-completo__section-android-moderno">
-                    <h1 id="android-moderno-2019-2024" class="section-android-moderno__titolo">ANDROID MODERNO (2019-2024)</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="section-android-moderno__subtitolo">Android 10 (2019) - Fim de uma Era</h2>
-                    <p class="section-android-moderno__paragrafo">
-                        O <strong>Android 10</strong> marcou uma transição histórica: o fim da tradição de nomear versões com nomes de doces:
-                    </p>
-
-                    <ul class="section-android-moderno__lista">
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Dark Theme Nativo</strong>: Tema escuro completo e nativo</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Live Caption</strong>: Legendas em tempo real para qualquer áudio</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Focus Mode</strong>: Pausar aplicativos distrativos</li>
-                    </ul>
-
-                    <h2 class="section-android-moderno__subtitolo">Android 11 (2020) - Era da Comunicação</h2>
-                    <p class="section-android-moderno__paragrafo">
-                        Lançado durante a pandemia COVID-19, o <strong>Android 11</strong> focou em comunicação:
-                    </p>
-
-                    <ul class="section-android-moderno__lista">
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Bubbles para Conversas</strong>: Conversas flutuando sobre outros apps</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Screen Recording Nativo</strong>: Gravação de tela integrada</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>One-time Permissions</strong>: Permissões apenas uma vez</li>
-                    </ul>
-
-                    <h2 class="section-android-moderno__subtitolo">Android 12 (2021) - Material You Revolution</h2>
-                    <p class="section-android-moderno__paragrafo">
-                        O <strong>Android 12</strong> introduziu a maior reformulação visual desde o Material Design original:
-                    </p>
-
-                    <ul class="section-android-moderno__lista">
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Material You Design Language</strong>: Sistema que se adapta às preferências individuais</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Dynamic Color System</strong>: Cores extraídas do wallpaper</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Privacy Dashboard</strong>: Central unificada de privacidade</li>
-                    </ul>
-
-                    <h2 class="section-android-moderno__subtitolo">Android 13 (2022) - Refinamento e Personalização</h2>
-                    <p class="section-android-moderno__paragrafo">
-                        O <strong>Android 13</strong> consolidou as inovações do Android 12:
-                    </p>
-
-                    <ul class="section-android-moderno__lista">
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Themed App Icons</strong>: Ícones adotam cores do tema</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Per-App Language Settings</strong>: Idiomas diferentes por app</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Photo Picker</strong>: Compartilhar fotos específicas</li>
-                    </ul>
-
-                    <h2 class="section-android-moderno__subtitolo">Android 14 (2023) - IA e Adaptabilidade</h2>
-                    <p class="section-android-moderno__paragrafo">
-                        O <strong>Android 14</strong> marcou a integração profunda de inteligência artificial:
-                    </p>
-
-                    <ul class="section-android-moderno__lista">
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Enhanced Lock Screen Customization</strong>: Personalização avançada</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Health Connect Integration</strong>: Plataforma unificada para saúde</li>
-                        <li class="section-android-moderno__lista--item">
-                            <strong>Credential Manager</strong>: Sistema unificado de credenciais</li>
-                    </ul>
-                </section>
-                <!--Android Brasil-->
-                <section id="texto-completo__section-android-no-brasil">
-                    <h1 id="android-no-brasil" class="section-android-no-brasil__titolo">ANDROID NO BRASIL</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="section-android-no-brasil__subtitolo">Chegada e Primeiros Anos (2009-2012)</h2>
-                    <div class="caixa-destaque">
-                        <p class="section-android-no-brasil__paragrafo">
-                            O Android chegou oficialmente ao Brasil em <strong>2009</strong>, inicialmente através de smartphones importados vendidos por operadoras como <strong>Claro e Vivo</strong>. O primeiro dispositivo Android vendido oficialmente no país foi o <strong id="motorola-milestone-primeiro-no-brasil">Motorola Milestone</strong> (versão global do Droid), lançado em <strong>2010</strong> com preço de aproximadamente <strong>R$ 1.200</strong>.
-                        </p>
-                    </div>
-
-                    <h2 class="section-android-no-brasil__subtitolo">Explosão do Mercado (2012-2016)</h2>
-                    <p class="section-android-no-brasil__paragrafo">
-                        Entre <strong>2012 e 2016</strong>, o Android experimentou crescimento explosivo no Brasil, impulsionado por diversos fatores convergentes:
-                    </p>
-
-                    <ul class="section-android-no-brasil__lista">
-                        <li class="section-android-no-brasil__lista--item">
-                            <strong>Smartphones Nacionais</strong>: Fabricantes estabeleceram operações locais</li>
-                        <li class="section-android-no-brasil__lista--item">
-                            <strong>Classe C em Ascensão</strong>: Crescimento da classe média brasileira</li>
-                        <li class="section-android-no-brasil__lista--item">
-                            <strong>Aplicativos Brasileiros</strong>: 99, iFood, Nubank, WhatsApp
-                        </li>
-                    </ul>
-
-                    <h2 class="section-android-no-brasil__subtitolo">Domínio Absoluto (2016-presente)</h2>
-                    <p class="section-android-no-brasil__paragrafo">
-                        Atualmente, o Android possui aproximadamente <strong>85% de participação</strong> no mercado brasileiro de smartphones, uma das maiores do mundo. Principais fabricantes:
-                    </p>
-
-                    <ul class="section-android-no-brasil__lista">
-                        <li class="section-android-no-brasil__lista--item">
-                            <strong>Samsung</strong>: Líder com ~40% de participação</li>
-                        <li class="section-android-no-brasil__lista--item">
-                            <strong>Motorola</strong>: Forte presença no segmento intermediário</li>
-                        <li class="section-android-no-brasil__lista--item">
-                            <strong>Xiaomi</strong>: Crescimento explosivo desde 2019</li>
-                    </ul>
-                </section>
-                <!--Ecossistema e tecnologias-->
-                <section id="texto-completo__section-ecossistema-tecnologias">
-                    <h1 id="ecossistema-e-tecnologias" class="section-ecossistema-tecnologias__titolo">ECOSSISTEMA E TECNOLOGIAS</h1>
-                    <div class="linha"></div>
-
-                    <h2 class="section-ecossistema-tecnologias__subtitolo">Google Play Store - Evolução da Distribuição</h2>
-                    <p class="section-ecossistema-tecnologias__paragrafo">
-                        A <strong>Google Play Store</strong> evoluiu dramaticamente desde seus dias como Android Market:
-                    </p>
-
-                    <ul class="section-ecossistema-tecnologias__lista">
-                        <li class="section-ecossistema-tecnologias__lista--item">
-                            Mais de <strong>2.8 milhões de aplicativos</strong> disponíveis</li>
-                        <li class="section-ecossistema-tecnologias__lista--item">
-                            Mais de <strong>100 bilhões de downloads anuais</strong></li>
-                        <li class="section-ecossistema-tecnologias__lista--item ">
-                            Disponível em <strong>190+ países</strong></li>
-                        <li class="section-ecossistema-tecnologias__lista--item">
-                            Receita anual superior a <strong>$40 bilhões</strong></li>
-                    </ul>
-
-                    <h2 class="section-ecossistema-tecnologias__subtitolo">Inteligência Artificial Integrada</h2>
-                    <p class="section-ecossistema-tecnologias__paragrafo">
-                        O Android tornou-se uma plataforma de IA líder mundial:
-                    </p>
-
-                    <ul class="section-ecossistema-tecnologias__lista">
-                        <li class="section-ecossistema-tecnologias__lista--item">
-                            <strong>Google Assistant</strong>: Disponível em português brasileiro desde 2017</li>
-                        <li class="section-ecossistema-tecnologias__lista--item">
-                            <strong>On-Device AI</strong>: Machine learning executado no dispositivo</li>
-                        <li class="section-ecossistema-tecnologias__lista--item">
-                            <strong>Google Lens</strong>: Integrado à câmera</li>
-                    </ul>
-
-                    <h2 class="section-ecossistema-tecnologias__subtitolo">Internet das Coisas e Conectividade</h2>
-                    <p class="section-ecossistema-tecnologias__paragrafo">O Android expandiu-se além de smartphones:</p>
-
-                    <ul class="section-ecossistema-tecnologias__lista">
-                        <li class="section-ecossistema-tecnologias__lista--item"><strong>Android TV</strong>: Smart TVs Samsung, LG, Sony</li>
-                        <li class="section-ecossistema-tecnologias__lista--item"><strong>Android Auto</strong>: Integração em veículos nacionais</li>
-                        <li class="section-ecossistema-tecnologias__lista--item"><strong>Wear OS</strong>: Smartwatches com integração profunda</li>
-                    </ul>
-                </section>
-                <!--Cronologia detalhada-->
-                <section id="texto-completo__section-cronologia">
-                    <h1 id="cronologia-detalhada-e-marcos" class="section-cronologia__titolo">CRONOLOGIA DETALHADA E MARCOS</h1>
-                    <div class="linha"></div>
-                    <h2 class="section-cronologia__subtitolo">Timeline Completa (2003-2024)</h2>
-                    <h3 class="section-cronologia__h2">2003-2005: Fundação e Aquisição</h3>
-
-                    <ul class="section-cronologia__lista">
-                        <li class="section-cronologia__lista--item"><strong>Outubro 2003</strong>: Fundação da Android Inc.</li>
-                        <li class="section-cronologia__lista--item"><strong>2004</strong>: Pivot para sistemas operacionais móveis</li>
-                        <li class="section-cronologia__lista--item"><strong>Julho 2005</strong>: Google adquire Android Inc. por ~$50 milhões</li>
-                    </ul>
-
-                    <h3 class="section-cronologia__h2">2007-2008: Lançamento Oficial</h3>
-                    <ul class="section-cronologia__lista">
-                        <li class="section-cronologia__lista--item"><strong>Novembro 2007</strong>: Anúncio da Open Handset Alliance</li>
-                        <li class="section-cronologia__lista--item"><strong>Setembro 2008</strong>: Lançamento do HTC Dream com Android 1.0</li>
-                    </ul>
-
-                    <h3 class="section-cronologia__h2">Dispositivos Históricos Importantes</h3>
-
-                    <ul class="section-cronologia__lista">
-                        <li class="section-cronologia__lista--item"><strong id="htc-dream-t-mobile-g1-2008-primeiro-android">HTC Dream (2008)</strong>: Primeiro smartphone Android</li>
-                        <li class="section-cronologia__lista--item"><strong id="motorola-droid-2009">Motorola Droid (2009)</strong>: Primeiro Android de sucesso massivo</li>
-                        <li class="section-cronologia__lista--item"><strong id="samsung-galaxy-s-2010">Samsung Galaxy S (2010)</strong>: Início da dominação Samsung</li>
-                        <li class="section-cronologia__lista--item"><strong id="galaxy-nexus-2011">Galaxy Nexus (2011)</strong>: Primeiro Android 4.0, tela HD</li>
-                        <li class="section-cronologia__lista--item"><strong id="nexus-7-2012">Nexus 7 (2012)</strong>: Tablet Android de sucesso</li>
-                        <li class="section-cronologia__lista--item"><strong id="moto-x-2013">Moto X (2013)</strong>: Personalização e comandos de voz</li>
-                        <li class="section-cronologia__lista--item"><strong id="nexus-5-2013">Nexus 5 (2013)</strong>: Android puro acessível</li>
-                        <li class="section-cronologia__lista--item"><strong id="galaxy-note-7-2016">Galaxy Note 7 (2016)</strong>: Desastre que mudou padrões</li>
-                        <li class="section-cronologia__lista--item"><strong id="pixel-2016">Pixel (2016)</strong>: Primeira linha própria do Google</li>
-                        <li class="section-cronologia__lista--item"><strong id="galaxy-s8-2017">Galaxy S8 (2017)</strong>: Tela infinita</li>
-                        <li class="section-cronologia__lista--item"><strong id="pixel-3-2018">Pixel 3 (2018)</strong>: Computational photography líder</li>
-                        <li class="section-cronologia__lista--item"><strong id="galaxy-fold-2019">Galaxy Fold (2019)</strong>: Primeiro foldable comercial</li>
-                        <li class="section-cronologia__lista--item"><strong id="pixel-6-2021">Pixel 6 (2021)</strong>: Chip Tensor próprio do Google</li>
-                    </ul>
-
-                    <h2 class="section-cronologia__subtitolo">Figuras Importantes</h2>
-                    <ul class="section-cronologia__lista">
-                        <li class="section-cronologia__lista--item"><strong id="andy-rubin-pai-do-android">Andy Rubin</strong> - Pai do Android, fundador da Android Inc.</li>
-                        <li class="section-cronologia__lista--item"><strong id="rich-miner-cofundador">Rich Miner</strong> - Cofundador da Android Inc.</li>
-                        <li class="section-cronologia__lista--item"><strong id="nick-sears-cofundador">Nick Sears</strong> - Cofundador da Android Inc.</li>
-                        <li class="section-cronologia__lista--item"><strong id="chris-white-cofundador">Chris White</strong> - Cofundador da Android Inc.</li>
-                        <li class="section-cronologia__lista--item"><strong id="larry-page-cofundador-google">Larry Page</strong> - Cofundador do Google</li>
-                        <li class="section-cronologia__lista--item"><strong id="sergey-brin-cofundador-google">Sergey Brin</strong> - Cofundador do Google</li>
-                        <li class="section-cronologia__lista--item"><strong id="sundar-pichai-ceo-google">Sundar Pichai</strong> - CEO do Google</li>
-                    </ul>
-                </section>
-            </section>    
+
+            <p class="section-origens-e-fundacao__paragrafo">
+              Esta mudança de direção foi crucial, pois antecipou em anos a
+              revolução smartphone que estaria por vir.
+            </p>
+
+            <h2 class="section-origens-e-fundacao__subititolo">
+              A Aquisição pelo Google (2005)
+            </h2>
+            <p class="section-origens-e-fundacao__paragrafo">
+              Em <strong>julho de 2005</strong>, o Google fez uma jogada que
+              mudaria para sempre o cenário da tecnologia móvel. A empresa de
+              Mountain View adquiriu a Android Inc. por aproximadamente
+              <strong>$50 milhões</strong>, em uma transação que na época passou
+              relativamente despercebida pela mídia especializada.
+            </p>
+
+            <p class="section-origens-e-fundacao__paragrafo">
+              <strong id="larry-page-cofundador-google">Larry Page</strong> e
+              <strong id="sergey-brin-cofundador-google">Sergey Brin</strong>,
+              fundadores do Google, haviam percebido que o futuro da internet
+              estava nos dispositivos móveis. Com o crescimento explosivo do uso
+              de smartphones previsível, era crucial para o Google garantir que
+              seus serviços estariam facilmente acessíveis nestes novos
+              dispositivos.
+            </p>
+
+            <h2 class="section-origens-e-fundacao__subititolo">
+              Integração Estratégica
+            </h2>
+            <p class="section-origens-e-fundacao__paragrafo">
+              Sob a liderança do Google, o projeto Android ganhou recursos
+              praticamente ilimitados e acesso a alguns dos melhores engenheiros
+              de software do mundo. <strong>Andy Rubin</strong> foi nomeado
+              Vice-Presidente de Engenharia e continuou liderando o
+              desenvolvimento do sistema.
+            </p>
+
+            <p class="section-origens-e-fundacao__paragrafo">
+              A estratégia do Google era clara: criar um ecossistema móvel que
+              promovesse o uso de seus serviços (<strong
+                >busca, Gmail, Maps, YouTube</strong
+              >) enquanto oferecia aos fabricantes uma alternativa gratuita aos
+              sistemas proprietários existentes.
+            </p>
+          </section>
+          <!--Desemvolvimento e primeira versão-->
+          <section
+            id="texto-completo__section-desenvolvimento-e-primeira-versao"
+          >
+            <h1
+              id="desenvolvimento-e-primeira-versao-2007-2008"
+              class="desenvolvimento-e-primeira-versao__titolo"
+            >
+              DESENVOLVIMENTO E PRIMEIRA VERSÃO (2007-2008)
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="desenvolvimento-e-primeira-versao__subtitolo">
+              Open Handset Alliance
+            </h2>
+            <p class="desenvolvimento-e-primeira-versao__paragrafo">
+              Em <strong>5 de novembro de 2007</strong>, o Google deu um passo
+              audacioso ao anunciar a
+              <strong>Open Handset Alliance (OHA)</strong>, um consórcio de
+              <strong>84 empresas</strong> líderes em tecnologia móvel. Esta
+              aliança incluía fabricantes de hardware, desenvolvedores de
+              software, operadoras de telecomunicações e fabricantes de
+              semicondutores.
+            </p>
+
+            <p class="desenvolvimento-e-primeira-versao__paragrafo">
+              Os membros fundadores eram impressionantes:
+              <strong
+                >Google (líder), HTC, Intel, Motorola, Samsung, Sprint,
+                T-Mobile, NVIDIA, Qualcomm</strong
+              >, e muitas outras. O objetivo era desenvolver padrões abertos
+              para dispositivos móveis e promover um ecossistema competitivo e
+              inovador.
+            </p>
+
+            <h2 class="desenvolvimento-e-primeira-versao__subtitolo">
+              Android 1.0 - Apple Pie
+            </h2>
+            <div class="caixa-destaque">
+              <p class="desenvolvimento-e-primeira-versao__paragrafo">
+                Em <strong>23 de setembro de 2008</strong>, a HTC lançou o
+                <strong id="htc-dream-t-mobile-g1-2008-primeiro-android"
+                  >Dream (conhecido como T-Mobile G1 nos EUA)</strong
+                >, o primeiro smartphone comercial com Android. Este dispositivo
+                histórico custava <strong>$179</strong> com contrato de dois
+                anos e apresentava especificações que hoje parecem primitivas:
+                tela de <strong>3.2 polegadas</strong>,
+                <strong>192MB de RAM</strong> e <strong>256MB</strong> de
+                armazenamento interno.
+              </p>
+            </div>
+
+            <p class="desenvolvimento-e-primeira-versao__paragrafo">
+              O <strong>Android 1.0</strong> incluía recursos que se tornaram
+              fundamentais para smartphones:
+            </p>
+
+            <ul class="desenvolvimento-e-primeira-versao__lista">
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                Interface touchscreen com
+                <strong>teclado físico QWERTY deslizante</strong>
+              </li>
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                <strong>Navegador web completo</strong> baseado no WebKit
+              </li>
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                <strong>Gmail integrado</strong> com sincronização automática
+              </li>
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                <strong>Google Maps</strong> com localização por GPS
+              </li>
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                <strong>Android Market</strong> para download de aplicativos
+              </li>
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                <strong>YouTube player integrado</strong>
+              </li>
+              <li class="desenvolvimento-e-primeira-versao__lista--item">
+                Suporte nativo para <strong>Java applications</strong>
+              </li>
+            </ul>
+          </section>
+          <!--Primeiras evoluções-->
+          <section id="texto-completo__section-primeiras-evolucoes">
+            <h1
+              id="primeiras-evolucoes-2009-2010"
+              class="section-primeiras-evolucoes__titolo"
+            >
+              PRIMEIRAS EVOLUÇÕES (2009-2010)
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-primeiras-evolucoes__subititolo">
+              Android 1.1 - Banana Bread (2009)
+            </h2>
+            <p class="section-primeiras-evolucoes__paragrafo">
+              Lançado em <strong>fevereiro de 2009</strong>, o Android 1.1 foi
+              uma atualização focada em correções e refinamentos. Embora não
+              tenha introduzido recursos visuais dramáticos, esta versão foi
+              crucial para estabilizar a plataforma e corrigir bugs críticos que
+              afetavam a experiência do usuário.
+            </p>
+
+            <h2 class="section-primeiras-evolucoes__subititolo">
+              Android 1.5 - Cupcake (2009)
+            </h2>
+            <p class="section-primeiras-evolucoes__paragrafo">
+              O <strong>Android 1.5</strong>, lançado em
+              <strong>abril de 2009</strong>, marcou o início da tradição de
+              nomear versões com nomes de doces em ordem alfabética. Cupcake
+              introduziu várias funcionalidades que se tornaram fundamentais
+              para a experiência Android:
+            </p>
+
+            <ul class="section-primeiras-evolucoes__lista">
+              <li class="section-primeiras-evolucoes__lista--item">
+                <strong>Widgets na Tela Inicial</strong>: Pela primeira vez,
+                usuários podiam adicionar widgets interativos na tela inicial
+              </li>
+              <li class="section-primeiras-evolucoes__lista--item">
+                <strong>Teclado Virtual</strong>: Android introduziu um teclado
+                virtual na tela mais sofisticado
+              </li>
+              <li class="section-primeiras-evolucoes__lista--item">
+                <strong>Gravação de Vídeo</strong>: O sistema passou a suportar
+                gravação de vídeo nativa
+              </li>
+            </ul>
+
+            <h2 class="section-primeiras-evolucoes__subititolo">
+              Android 1.6 - Donut (2009)
+            </h2>
+            <p class="section-primeiras-evolucoes__paragrafo">
+              Lançado em <strong>setembro de 2009</strong>, o Donut foi uma
+              versão focada em expandir a compatibilidade do Android. Com
+              diferentes fabricantes lançando dispositivos com especificações
+              variadas, era crucial que o sistema se adaptasse a esta
+              diversidade.
+            </p>
+
+            <h2 class="section-primeiras-evolucoes__subititolo">
+              Android 2.0/2.1 - Eclair (2009-2010)
+            </h2>
+            <p class="section-primeiras-evolucoes__paragrafo">
+              O <strong>Eclair</strong>, lançado inicialmente em
+              <strong>outubro de 2009</strong> (versão 2.0) e refinado em
+              <strong>janeiro de 2010</strong> (versão 2.1), representou um
+              salto qualitativo significativo na evolução do Android.
+            </p>
+
+            <h2 class="section-primeiras-evolucoes__subititolo">
+              Android 2.2 - Froyo (2010)
+            </h2>
+            <p class="section-primeiras-evolucoes__paragrafo">
+              O <strong>Froyo (Frozen Yogurt)</strong>, lançado em
+              <strong>maio de 2010</strong>, foi uma das atualizações mais
+              impactantes na história inicial do Android. Esta versão focou
+              intensamente em performance e funcionalidades avançadas:
+            </p>
+
+            <ul class="section-primeiras-evolucoes__lista">
+              <li class="section-primeiras-evolucoes__lista--item">
+                <strong>Compilador JIT</strong>: Melhorias de performance de 2 a
+                5 vezes
+              </li>
+              <li class="section-primeiras-evolucoes__lista--item">
+                <strong>Wi-Fi Hotspot</strong>: Android passou a funcionar como
+                ponto de acesso Wi-Fi
+              </li>
+              <li class="section-primeiras-evolucoes__lista--item">
+                <strong>Adobe Flash</strong>: Suporte completo para Adobe Flash
+                Player
+              </li>
+            </ul>
+          </section>
+          <!--consolidaçao e crescimento-->
+          <section id="texto-completo__section-consolidacao-e-crescimento">
+            <h1
+              id="consolidacao-e-crescimento-2010-2013"
+              class="section-consolidacao-e-crescimento__titolo"
+            >
+              CONSOLIDAÇÃO E CRESCIMENTO (2010-2013)
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-consolidacao-e-crescimento__subtitolo">
+              Android 2.3 - Gingerbread (2010-2011)
+            </h2>
+            <p class="section-consolidacao-e-crescimento__paragrafo">
+              O <strong>Gingerbread</strong>, lançado em
+              <strong>dezembro de 2010</strong>, tornou-se uma das versões mais
+              duradouras e populares do Android. Focou em refinamento da
+              interface do usuário, melhor gerenciamento de energia, e novos
+              recursos de comunicação.
+            </p>
+
+            <h2 class="section-consolidacao-e-crescimento__subtitolo">
+              Android 3.0 - Honeycomb (2011)
+            </h2>
+            <p class="section-consolidacao-e-crescimento__paragrafo">
+              O <strong>Honeycomb</strong> marcou uma mudança estratégica
+              importante para o Android: a primeira versão dedicada
+              exclusivamente a <strong>tablets</strong>. Com o iPad dominando o
+              mercado de tablets, o Google precisava de uma resposta rápida e
+              efetiva.
+            </p>
+
+            <h2 class="section-consolidacao-e-crescimento__subtitolo">
+              Android 4.0 - Ice Cream Sandwich (2011)
+            </h2>
+            <p class="section-consolidacao-e-crescimento__paragrafo">
+              O <strong>Ice Cream Sandwich</strong>, lançado em
+              <strong>outubro de 2011</strong>, foi um marco na história do
+              Android. Pela primeira vez, uma única versão do sistema
+              operacional foi projetada para funcionar tanto em
+              <strong>smartphones quanto em tablets</strong>, unificando a
+              experiência do usuário.
+            </p>
+
+            <h2 class="section-consolidacao-e-crescimento__subtitolo">
+              Android 4.1/4.2/4.3 - Jelly Bean (2012-2013)
+            </h2>
+            <p class="section-consolidacao-e-crescimento__paragrafo">
+              A série <strong>Jelly Bean</strong> representou o período de maior
+              refinamento técnico na história do Android até então. Estas
+              versões focaram intensamente em performance, fluidez, e recursos
+              inteligentes:
+            </p>
+
+            <ul class="section-consolidacao-e-crescimento__lista">
+              <li class="section-consolidacao-e-crescimento__lista--item">
+                <strong>Project Butter</strong>: Interface do Android tão fluida
+                quanto 60 frames por segundo
+              </li>
+              <li class="section-consolidacao-e-crescimento__lista--item">
+                <strong>Google Now</strong>: Assistente preditivo revolucionário
+              </li>
+              <li class="section-consolidacao-e-crescimento__lista--item">
+                <strong>Notificações Expandidas</strong>: Capacidade de expandir
+                e mostrar mais informações
+              </li>
+            </ul>
+          </section>
+          <!--Era material e design-->
+          <section id="texto-completo__section-era-material-e-design">
+            <h1
+              id="era-material-design-2014-2016"
+              class="section-era-material-e-design__titolo"
+            >
+              ERA MATERIAL DESIGN (2014-2016)
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-era-material-e-design__subtitolo">
+              Android 5.0/5.1 - Lollipop (2014-2015)
+            </h2>
+            <p class="section-era-material-e-design__paragrafo">
+              O <strong>Lollipop</strong> representou a maior reformulação
+              visual na história do Android. Introduziu o
+              <strong>Material Design</strong>, uma linguagem de design que não
+              apenas mudou a aparência do Android, mas influenciou todo o design
+              digital moderno.
+            </p>
+
+            <ul class="section-era-material-e-design__lista">
+              <li class="section-era-material-e-design__lista--item">
+                <strong>Material Design Philosophy</strong>: Baseado em
+                princípios de design físico
+              </li>
+              <li class="section-era-material-e-design__lista--item">
+                <strong>ART Runtime</strong>: Substituição completa do runtime
+                Dalvik
+              </li>
+              <li class="section-era-material-e-design__lista--item">
+                <strong>Project Volta</strong>: Otimizações de bateria
+              </li>
+            </ul>
+
+            <h2 class="section-era-material-e-design__subtitolo">
+              Android 6.0 - Marshmallow (2015)
+            </h2>
+            <p class="section-era-material-e-design__paragrafo">
+              O <strong>Marshmallow</strong> focou em refinamento e
+              funcionalidades que prepararam o Android para a próxima década de
+              computação móvel:
+            </p>
+
+            <ul class="section-era-material-e-design__lista">
+              <li class="section-era-material-e-design__lista--item">
+                <strong>Runtime Permissions</strong>: Revolução no sistema de
+                permissões
+              </li>
+              <li class="section-era-material-e-design__lista--item">
+                <strong>Doze Mode</strong>: Sistema inteligente de hibernação
+              </li>
+              <li class="section-era-material-e-design__lista--item">
+                <strong>Google Now On Tap</strong>: Informações contextuais
+              </li>
+            </ul>
+          </section>
+          <!--Maturidade e inteligencia-->
+          <section id="texto-completo__section-maturidade-e-inteligencia">
+            <h1
+              id="maturidade-e-inteligencia-2016-2019"
+              class="section-maturidade-e-inteligencia__titolo"
+            >
+              MATURIDADE E INTELIGÊNCIA (2016-2019)
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-maturidade-e-inteligencia__subtitolo">
+              Android 7.0/7.1 - Nougat (2016)
+            </h2>
+            <p class="section-maturidade-e-inteligencia__paragrafo">
+              O <strong>Nougat</strong> marcou a entrada do Android na era da
+              multitarefa avançada e produtividade móvel:
+            </p>
+
+            <ul class="section-maturidade-e-inteligencia__lista">
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Multi-Window (Split Screen)</strong>: Dois aplicativos
+                simultaneamente
+              </li>
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Notificações Inline Reply</strong>: Responder mensagens
+                das notificações
+              </li>
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Vulkan API</strong>: Performance superior em jogos
+              </li>
+            </ul>
+
+            <h2 class="section-maturidade-e-inteligencia__subtitolo">
+              Android 8.0/8.1 - Oreo (2017)
+            </h2>
+            <p class="section-maturidade-e-inteligencia__paragrafo">
+              O <strong>Oreo</strong> introduziu mudanças arquiteturais
+              fundamentais:
+            </p>
+
+            <ul class="section-maturidade-e-inteligencia__lista">
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Project Treble</strong>: Separação entre sistema Android
+                e código do fabricante
+              </li>
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Notification Channels</strong>: Controle granular de
+                notificações
+              </li>
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Picture-in-Picture Mode</strong>: Vídeos em janela
+                pequena
+              </li>
+            </ul>
+
+            <h2 class="section-maturidade-e-inteligencia__subtitolo">
+              Android 9 - Pie (2018)
+            </h2>
+            <p class="section-maturidade-e-inteligencia__paragrafo">
+              O <strong>Pie</strong> representou a entrada completa do Android
+              na era da inteligência artificial:
+            </p>
+
+            <ul class="section-maturidade-e-inteligencia__lista">
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Gesture Navigation</strong>: Sistema baseado em gestos
+              </li>
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Adaptive Battery</strong>: Machine learning para
+                otimização
+              </li>
+              <li class="section-maturidade-e-inteligencia__lista--item">
+                <strong>Digital Wellbeing</strong>: Controle do tempo de uso
+              </li>
+            </ul>
+          </section>
+          <!---->
+          <section id="texto-completo__section-android-moderno">
+            <h1
+              id="android-moderno-2019-2024"
+              class="section-android-moderno__titolo"
+            >
+              ANDROID MODERNO (2019-2024)
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-android-moderno__subtitolo">
+              Android 10 (2019) - Fim de uma Era
+            </h2>
+            <p class="section-android-moderno__paragrafo">
+              O <strong>Android 10</strong> marcou uma transição histórica: o
+              fim da tradição de nomear versões com nomes de doces:
+            </p>
+
+            <ul class="section-android-moderno__lista">
+              <li class="section-android-moderno__lista--item">
+                <strong>Dark Theme Nativo</strong>: Tema escuro completo e
+                nativo
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Live Caption</strong>: Legendas em tempo real para
+                qualquer áudio
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Focus Mode</strong>: Pausar aplicativos distrativos
+              </li>
+            </ul>
+
+            <h2 class="section-android-moderno__subtitolo">
+              Android 11 (2020) - Era da Comunicação
+            </h2>
+            <p class="section-android-moderno__paragrafo">
+              Lançado durante a pandemia COVID-19, o
+              <strong>Android 11</strong> focou em comunicação:
+            </p>
+
+            <ul class="section-android-moderno__lista">
+              <li class="section-android-moderno__lista--item">
+                <strong>Bubbles para Conversas</strong>: Conversas flutuando
+                sobre outros apps
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Screen Recording Nativo</strong>: Gravação de tela
+                integrada
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>One-time Permissions</strong>: Permissões apenas uma vez
+              </li>
+            </ul>
+
+            <h2 class="section-android-moderno__subtitolo">
+              Android 12 (2021) - Material You Revolution
+            </h2>
+            <p class="section-android-moderno__paragrafo">
+              O <strong>Android 12</strong> introduziu a maior reformulação
+              visual desde o Material Design original:
+            </p>
+
+            <ul class="section-android-moderno__lista">
+              <li class="section-android-moderno__lista--item">
+                <strong>Material You Design Language</strong>: Sistema que se
+                adapta às preferências individuais
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Dynamic Color System</strong>: Cores extraídas do
+                wallpaper
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Privacy Dashboard</strong>: Central unificada de
+                privacidade
+              </li>
+            </ul>
+
+            <h2 class="section-android-moderno__subtitolo">
+              Android 13 (2022) - Refinamento e Personalização
+            </h2>
+            <p class="section-android-moderno__paragrafo">
+              O <strong>Android 13</strong> consolidou as inovações do Android
+              12:
+            </p>
+
+            <ul class="section-android-moderno__lista">
+              <li class="section-android-moderno__lista--item">
+                <strong>Themed App Icons</strong>: Ícones adotam cores do tema
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Per-App Language Settings</strong>: Idiomas diferentes
+                por app
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Photo Picker</strong>: Compartilhar fotos específicas
+              </li>
+            </ul>
+
+            <h2 class="section-android-moderno__subtitolo">
+              Android 14 (2023) - IA e Adaptabilidade
+            </h2>
+            <p class="section-android-moderno__paragrafo">
+              O <strong>Android 14</strong> marcou a integração profunda de
+              inteligência artificial:
+            </p>
+
+            <ul class="section-android-moderno__lista">
+              <li class="section-android-moderno__lista--item">
+                <strong>Enhanced Lock Screen Customization</strong>:
+                Personalização avançada
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Health Connect Integration</strong>: Plataforma
+                unificada para saúde
+              </li>
+              <li class="section-android-moderno__lista--item">
+                <strong>Credential Manager</strong>: Sistema unificado de
+                credenciais
+              </li>
+            </ul>
+          </section>
+          <!--Android Brasil-->
+          <section id="texto-completo__section-android-no-brasil">
+            <h1
+              id="android-no-brasil"
+              class="section-android-no-brasil__titolo"
+            >
+              ANDROID NO BRASIL
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-android-no-brasil__subtitolo">
+              Chegada e Primeiros Anos (2009-2012)
+            </h2>
+            <div class="caixa-destaque">
+              <p class="section-android-no-brasil__paragrafo">
+                O Android chegou oficialmente ao Brasil em
+                <strong>2009</strong>, inicialmente através de smartphones
+                importados vendidos por operadoras como
+                <strong>Claro e Vivo</strong>. O primeiro dispositivo Android
+                vendido oficialmente no país foi o
+                <strong id="motorola-milestone-primeiro-no-brasil"
+                  >Motorola Milestone</strong
+                >
+                (versão global do Droid), lançado em <strong>2010</strong> com
+                preço de aproximadamente <strong>R$ 1.200</strong>.
+              </p>
+            </div>
+
+            <h2 class="section-android-no-brasil__subtitolo">
+              Explosão do Mercado (2012-2016)
+            </h2>
+            <p class="section-android-no-brasil__paragrafo">
+              Entre <strong>2012 e 2016</strong>, o Android experimentou
+              crescimento explosivo no Brasil, impulsionado por diversos fatores
+              convergentes:
+            </p>
+
+            <ul class="section-android-no-brasil__lista">
+              <li class="section-android-no-brasil__lista--item">
+                <strong>Smartphones Nacionais</strong>: Fabricantes
+                estabeleceram operações locais
+              </li>
+              <li class="section-android-no-brasil__lista--item">
+                <strong>Classe C em Ascensão</strong>: Crescimento da classe
+                média brasileira
+              </li>
+              <li class="section-android-no-brasil__lista--item">
+                <strong>Aplicativos Brasileiros</strong>: 99, iFood, Nubank,
+                WhatsApp
+              </li>
+            </ul>
+
+            <h2 class="section-android-no-brasil__subtitolo">
+              Domínio Absoluto (2016-presente)
+            </h2>
+            <p class="section-android-no-brasil__paragrafo">
+              Atualmente, o Android possui aproximadamente
+              <strong>85% de participação</strong> no mercado brasileiro de
+              smartphones, uma das maiores do mundo. Principais fabricantes:
+            </p>
+
+            <ul class="section-android-no-brasil__lista">
+              <li class="section-android-no-brasil__lista--item">
+                <strong>Samsung</strong>: Líder com ~40% de participação
+              </li>
+              <li class="section-android-no-brasil__lista--item">
+                <strong>Motorola</strong>: Forte presença no segmento
+                intermediário
+              </li>
+              <li class="section-android-no-brasil__lista--item">
+                <strong>Xiaomi</strong>: Crescimento explosivo desde 2019
+              </li>
+            </ul>
+          </section>
+          <!--Ecossistema e tecnologias-->
+          <section id="texto-completo__section-ecossistema-tecnologias">
+            <h1
+              id="ecossistema-e-tecnologias"
+              class="section-ecossistema-tecnologias__titolo"
+            >
+              ECOSSISTEMA E TECNOLOGIAS
+            </h1>
+            <div class="linha"></div>
+
+            <h2 class="section-ecossistema-tecnologias__subtitolo">
+              Google Play Store - Evolução da Distribuição
+            </h2>
+            <p class="section-ecossistema-tecnologias__paragrafo">
+              A <strong>Google Play Store</strong> evoluiu dramaticamente desde
+              seus dias como Android Market:
+            </p>
+
+            <ul class="section-ecossistema-tecnologias__lista">
+              <li class="section-ecossistema-tecnologias__lista--item">
+                Mais de <strong>2.8 milhões de aplicativos</strong> disponíveis
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                Mais de <strong>100 bilhões de downloads anuais</strong>
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                Disponível em <strong>190+ países</strong>
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                Receita anual superior a <strong>$40 bilhões</strong>
+              </li>
+            </ul>
+
+            <h2 class="section-ecossistema-tecnologias__subtitolo">
+              Inteligência Artificial Integrada
+            </h2>
+            <p class="section-ecossistema-tecnologias__paragrafo">
+              O Android tornou-se uma plataforma de IA líder mundial:
+            </p>
+
+            <ul class="section-ecossistema-tecnologias__lista">
+              <li class="section-ecossistema-tecnologias__lista--item">
+                <strong>Google Assistant</strong>: Disponível em português
+                brasileiro desde 2017
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                <strong>On-Device AI</strong>: Machine learning executado no
+                dispositivo
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                <strong>Google Lens</strong>: Integrado à câmera
+              </li>
+            </ul>
+
+            <h2 class="section-ecossistema-tecnologias__subtitolo">
+              Internet das Coisas e Conectividade
+            </h2>
+            <p class="section-ecossistema-tecnologias__paragrafo">
+              O Android expandiu-se além de smartphones:
+            </p>
+
+            <ul class="section-ecossistema-tecnologias__lista">
+              <li class="section-ecossistema-tecnologias__lista--item">
+                <strong>Android TV</strong>: Smart TVs Samsung, LG, Sony
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                <strong>Android Auto</strong>: Integração em veículos nacionais
+              </li>
+              <li class="section-ecossistema-tecnologias__lista--item">
+                <strong>Wear OS</strong>: Smartwatches com integração profunda
+              </li>
+            </ul>
+          </section>
+          <!--Cronologia detalhada-->
+          <section id="texto-completo__section-cronologia">
+            <h1
+              id="cronologia-detalhada-e-marcos"
+              class="section-cronologia__titolo"
+            >
+              CRONOLOGIA DETALHADA E MARCOS
+            </h1>
+            <div class="linha"></div>
+            <h2 class="section-cronologia__subtitolo">
+              Timeline Completa (2003-2024)
+            </h2>
+            <h3 class="section-cronologia__h2">
+              2003-2005: Fundação e Aquisição
+            </h3>
+
+            <ul class="section-cronologia__lista">
+              <li class="section-cronologia__lista--item">
+                <strong>Outubro 2003</strong>: Fundação da Android Inc.
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong>2004</strong>: Pivot para sistemas operacionais móveis
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong>Julho 2005</strong>: Google adquire Android Inc. por
+                ~$50 milhões
+              </li>
+            </ul>
+
+            <h3 class="section-cronologia__h2">
+              2007-2008: Lançamento Oficial
+            </h3>
+            <ul class="section-cronologia__lista">
+              <li class="section-cronologia__lista--item">
+                <strong>Novembro 2007</strong>: Anúncio da Open Handset Alliance
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong>Setembro 2008</strong>: Lançamento do HTC Dream com
+                Android 1.0
+              </li>
+            </ul>
+
+            <h3 class="section-cronologia__h2">
+              Dispositivos Históricos Importantes
+            </h3>
+
+            <ul class="section-cronologia__lista">
+              <li class="section-cronologia__lista--item">
+                <strong id="htc-dream-t-mobile-g1-2008-primeiro-android"
+                  >HTC Dream (2008)</strong
+                >: Primeiro smartphone Android
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="motorola-droid-2009">Motorola Droid (2009)</strong>:
+                Primeiro Android de sucesso massivo
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="samsung-galaxy-s-2010"
+                  >Samsung Galaxy S (2010)</strong
+                >: Início da dominação Samsung
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="galaxy-nexus-2011">Galaxy Nexus (2011)</strong>:
+                Primeiro Android 4.0, tela HD
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="nexus-7-2012">Nexus 7 (2012)</strong>: Tablet
+                Android de sucesso
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="moto-x-2013">Moto X (2013)</strong>: Personalização
+                e comandos de voz
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="nexus-5-2013">Nexus 5 (2013)</strong>: Android puro
+                acessível
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="galaxy-note-7-2016">Galaxy Note 7 (2016)</strong>:
+                Desastre que mudou padrões
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="pixel-2016">Pixel (2016)</strong>: Primeira linha
+                própria do Google
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="galaxy-s8-2017">Galaxy S8 (2017)</strong>: Tela
+                infinita
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="pixel-3-2018">Pixel 3 (2018)</strong>: Computational
+                photography líder
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="galaxy-fold-2019">Galaxy Fold (2019)</strong>:
+                Primeiro foldable comercial
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="pixel-6-2021">Pixel 6 (2021)</strong>: Chip Tensor
+                próprio do Google
+              </li>
+            </ul>
+
+            <h2 class="section-cronologia__subtitolo">Figuras Importantes</h2>
+            <ul class="section-cronologia__lista">
+              <li class="section-cronologia__lista--item">
+                <strong id="andy-rubin-pai-do-android">Andy Rubin</strong> - Pai
+                do Android, fundador da Android Inc.
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="rich-miner-cofundador">Rich Miner</strong> -
+                Cofundador da Android Inc.
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="nick-sears-cofundador">Nick Sears</strong> -
+                Cofundador da Android Inc.
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="chris-white-cofundador">Chris White</strong> -
+                Cofundador da Android Inc.
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="larry-page-cofundador-google">Larry Page</strong> -
+                Cofundador do Google
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="sergey-brin-cofundador-google">Sergey Brin</strong>
+                - Cofundador do Google
+              </li>
+              <li class="section-cronologia__lista--item">
+                <strong id="sundar-pichai-ceo-google">Sundar Pichai</strong> -
+                CEO do Google
+              </li>
+            </ul>
+          </section>
         </section>
+      </section>
     </main>
-        
+
     <footer>
-        <section class="footer__section curiosidades">
-            <h2 class="curiosidades__titolo">Curiosidades e Fatos</h2>
-            <ul class="curiosidades__lista">
-                <li><a class="curiosidades__link" href="#">Por que o Android usa nomes de doces em ordem alfabética?</a></li>
-                <li><a class="curiosidades__link" href="#">Quantos dispositivos Android são ativados por diaglobalmente?</a></li>
-                <li><a class="curiosidades__link" href="#">Como é escolhido onome de cada versão?</a></li>
-                <li><a class="curiosidades__link" href="#">Histórias dos Easter eggs escondidos em cada versão</a></li>
-            </ul>
-        </section>
-        <section class="footer__section grossario">
-            <h2 class="grossario__titolo">Glossário Técnico</h2>
-            <ul class="grossario__lista">
-                <li><a class="grossario__link" href="#">AOSP - Android Open Source Project</a></li>
-                <li><a class="grossario__link" href="#">ART - Android Runtime</a></li>
-                <li><a class="grossario__link" href="#">Material Design - Linguagem de design do Google</a></li>
-                <li><a class="grossario__link" href="#">Project Treble - Arquitetura modular para atualizações</a></li>
-                <li><a class="grossario__link" href="#">Custom ROM - Versão modificada do Android</a></li>
-            </ul>
-        </section>
+      <section class="footer__section curiosidades">
+        <h2 class="curiosidades__titolo">Curiosidades e Fatos</h2>
+        <ul class="curiosidades__lista">
+          <li>
+            <a class="curiosidades__link" href="#"
+              >Por que o Android usa nomes de doces em ordem alfabética?</a
+            >
+          </li>
+          <li>
+            <a class="curiosidades__link" href="#"
+              >Quantos dispositivos Android são ativados por diaglobalmente?</a
+            >
+          </li>
+          <li>
+            <a class="curiosidades__link" href="#"
+              >Como é escolhido onome de cada versão?</a
+            >
+          </li>
+          <li>
+            <a class="curiosidades__link" href="#"
+              >Histórias dos Easter eggs escondidos em cada versão</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="footer__section grossario">
+        <h2 class="grossario__titolo">Glossário Técnico</h2>
+        <ul class="grossario__lista">
+          <li>
+            <a class="grossario__link" href="#"
+              >AOSP - Android Open Source Project</a
+            >
+          </li>
+          <li><a class="grossario__link" href="#">ART - Android Runtime</a></li>
+          <li>
+            <a class="grossario__link" href="#"
+              >Material Design - Linguagem de design do Google</a
+            >
+          </li>
+          <li>
+            <a class="grossario__link" href="#"
+              >Project Treble - Arquitetura modular para atualizações</a
+            >
+          </li>
+          <li>
+            <a class="grossario__link" href="#"
+              >Custom ROM - Versão modificada do Android</a
+            >
+          </li>
+        </ul>
+      </section>
 
-        <section class="footer__section interativo">
-            <h2 class="interativo__titolo">Android: Quiz & Timeline</h2>
-            <ul class="interativo__lista">
-                <li><a class="interativo__link" href="#">Quiz sobre versões do Android</a></li>
-                <li><a class="interativo__link" href="#">Timeline interativo da evolução</a></li>
-            </ul>
-        </section>
+      <section class="footer__section interativo">
+        <h2 class="interativo__titolo">Android: Quiz & Timeline</h2>
+        <ul class="interativo__lista">
+          <li>
+            <a class="interativo__link" href="#"
+              >Quiz sobre versões do Android</a
+            >
+          </li>
+          <li>
+            <a class="interativo__link" href="#"
+              >Timeline interativo da evolução</a
+            >
+          </li>
+        </ul>
+      </section>
 
-        <section class="footer__section follow"> 
-            <h2 class="follow__titolo">Redes Sociais</h2>
-            <address class="follow__links">
-                <a href="https://www.instagram.com/joseafk88/">
-                    <img class="follow__img" src="./assets/img/icons/instagram.png" alt="imagem-link-instagram">
-                </a>
-                <a href="https://github.com/jose33-afk">
-                    <img class="follow__img" src="./assets/img/icons/github.png" alt="imagem-link-github"></a>
-                <a href="https://www.linkedin.com/in/jose-carlos-8766a2315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <img class="follow__img" src="./assets/img/icons/linkedin.png" alt="imagem-link-linkedin">
-                </a>
-            </address>
-        </section>
+      <section class="footer__section follow">
+        <h2 class="follow__titolo">Redes Sociais</h2>
+        <address class="follow__links">
+          <a href="https://www.instagram.com/joseafk88/">
+            <img
+              class="follow__img"
+              src="./assets/img/icons/instagram.png"
+              alt="imagem-link-instagram"
+            />
+          </a>
+          <a href="https://github.com/jose33-afk">
+            <img
+              class="follow__img"
+              src="./assets/img/icons/github.png"
+              alt="imagem-link-github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/jose-carlos-8766a2315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          >
+            <img
+              class="follow__img"
+              src="./assets/img/icons/linkedin.png"
+              alt="imagem-link-linkedin"
+            />
+          </a>
+        </address>
+      </section>
     </footer>
-        
+
     <script type="module" src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>

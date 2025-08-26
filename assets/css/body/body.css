@@ -1,17 +1,17 @@
 body {
-    background-color: var(--background);
-    display: grid;
-    grid-template: auto auto auto / 1fr;
-    position: relative;
+  background-color: var(--background);
+  display: grid;
+  grid-template: auto auto auto / 1fr;
+  position: relative;
 }
 
 [data-mark="yellow"] {
-    background-color: yellow;
-    border-radius: 10px;
-    color: black;
-    padding: 0 5px;
+  background-color: yellow;
+  border-radius: 10px;
+  color: black;
+  padding: 0 5px;
 }
 
 [data-mark="off"] {
-    background-color: transparent;
+  background-color: transparent;
 }

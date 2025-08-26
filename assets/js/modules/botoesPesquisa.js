@@ -1,27 +1,28 @@
-import { pegaElemento } from "./utils.js"
-import { rolar } from "./pesquisa.js"
+import { pegaElemento } from "./utils.js";
+import { rolar } from "./pesquisa.js";
 
 const botoes = (indexs) => {
-    const bntProx = pegaElemento('.botoes__botao.prox');
-    const bntAnt = pegaElemento('.botoes__botao.ant');
-    let contIndex = 1;
+  const bntProx = pegaElemento(".botoes__botao.prox");
+  const bntAnt = pegaElemento(".botoes__botao.ant");
+  let contIndex = 1;
 
-    bntProx.addEventListener('click', () => {
-        if (contIndex < (indexs.length - 1)) {
-            console.log(contIndex)
-            contIndex++  
-            rolar(indexs[contIndex])
-        }
-    });
+  bntProx.addEventListener("click", () => {
+    if (contIndex < indexs.length - 1) {
+      console.log(contIndex);
+      contIndex++;
+      rolar(indexs[contIndex]);
+    }
+  });
 
-    bntAnt.addEventListener('click', () => {
-        if (contIndex !== 0) { //!== nao !=
-            contIndex--
-            rolar(indexs[contIndex])
-        }
-    });
+  bntAnt.addEventListener("click", () => {
+    if (contIndex !== 0) {
+      //!== nao !=
+      contIndex--;
+      rolar(indexs[contIndex]); //add um aviso sem usar alse n da certo usar if
+    }
+  });
 
-    rolar(indexs[0]) //Primeira vez
-}
+  rolar(indexs[0]); //Primeira vez
+};
 
 export { botoes };

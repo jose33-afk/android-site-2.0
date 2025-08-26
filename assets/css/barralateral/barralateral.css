@@ -1,14 +1,14 @@
 .main__menu {
-    background: var(--background-menu-lateral);
-    color: white;
-    overflow-y: auto;
-    opacity: 0;
-    width: 0;
+  background: var(--background-menu-lateral);
+  color: white;
+  overflow-y: auto;
+  opacity: 0;
+  width: 0;
 }
 
 .main__menu.ativo {
-    opacity: 1;
-    width: 100%;
+  opacity: 1;
+  width: 100%;
 }
 
 .menu__lista--item {
@@ -17,18 +17,18 @@
 }
 
 @media (max-width: 913px) {
-    .main__menu {
-        background-color: black;
-        position: absolute;
-    }
+  .main__menu {
+    background-color: black;
+    position: absolute;
+  }
 
-    .main__menu.ativo {
-        opacity: 1;
-        width: 80%;
-    }
+  .main__menu.ativo {
+    opacity: 1;
+    width: 80%;
+  }
 
-    .menu__lista--item {
-        line-height: 1.4em;
-        font-size: 1em;
-    }
+  .menu__lista--item {
+    line-height: 1.4em;
+    font-size: 1em;
+  }
 }
